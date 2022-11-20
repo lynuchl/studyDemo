@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="lynu.chaohl.SpringbootBase2.ServerBaseDemo.mapper.ServerBaseDemoMapper">
+  <resultMap id="BaseResultMap" type="lynu.chaohl.SpringbootBase2.ServerBaseDemo.entity.ServerBaseDemo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="testid" jdbcType="INTEGER" property="testid" />
+    <result column="testname" jdbcType="VARCHAR" property="testname" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, testid, testname
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from serverbasedemo
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from serverbasedemo
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="lynu.chaohl.SpringbootBase2.ServerBaseDemo.entity.ServerBaseDemo">
+    insert into serverbasedemo (id, testid, testname
+      )
+    values (#{id,jdbcType=INTEGER}, #{testid,jdbcType=INTEGER}, #{testname,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="lynu.chaohl.SpringbootBase2.ServerBaseDemo.entity.ServerBaseDemo">
+    insert into serverbasedemo
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="testid != null">
+        testid,
+      </if>
+      <if test="testname != null">
+        testname,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="testid != null">
+        #{testid,jdbcType=INTEGER},
+      </if>
+      <if test="testname != null">
+        #{testname,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="lynu.chaohl.SpringbootBase2.ServerBaseDemo.entity.ServerBaseDemo">
+    update serverbasedemo
+    <set>
+      <if test="testid != null">
+        testid = #{testid,jdbcType=INTEGER},
+      </if>
+      <if test="testname != null">
+        testname = #{testname,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="lynu.chaohl.SpringbootBase2.ServerBaseDemo.entity.ServerBaseDemo">
+    update serverbasedemo
+    set testid = #{testid,jdbcType=INTEGER},
+      testname = #{testname,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,60 @@
+server:
+  port: 16000
+  servlet:
+    # 应用的访问根路径
+    context-path: /javaDemo
+
+#多配置文件，配置激活的目标
+spring:
+  profiles:
+    active: data
+## 2.6.x版本的spingboot不兼容swagger某些版本,需要添加的配置。
+  mvc:
+    pathmatch:
+     matching-strategy: ant_path_matcher
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/DemoDB?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: root
+    password: 123456
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: lynu.chaohl.SpringbootBase2.ServerBaseDemo.mapper
+#  datasource:
+#  #mybatis连接配置
+#    driver-class-name: org.h2.Driver
+##    schema: classpath:db/schema-h2.sql
+##    data: classpath:db/data-h2.sql
+#        # No restrictions on table names
+#    url: jdbc:h2:mem:h2
+#        # No restrictions on username and password
+#    username: root
+#    password: 123
+#  datasource:
+##  mybatis连接配置
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/test?serverTimezone=GMT%2B8&useSSL=true
+#    username: root
+#    password: 123456
+## H2数据库连接配置、不做配置时、按照默认配置。
+#    driver-class-name: org.h2.Driver
+#    schema: classpath:db/schema-h2.sql
+#    data: classpath:db/data-h2.sql
+#        # No restrictions on table names
+#    url: jdbc:h2:mem:h2
+#        # No restrictions on username and password
+#    username: root
+#    password: 123
+
+
+#使用配置文件,配置数据
+#auto:
+#  field:
+#    name: chaohl
+#    title: chaohlDemo
+##    参数间引用
+#    desc: ${auto.field.name}正在做${auto.field.title}
+##    生成随机值
+#    randomValue: ${random.value}
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Demo_2/Demo_2.iml" filepath="$PROJECT_DIR$/Demo_2/Demo_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java_Demo.iml" filepath="$PROJECT_DIR$/Java_Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringbootBase/SpringbootBase.iml" filepath="$PROJECT_DIR$/SpringbootBase/SpringbootBase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringbootBase2/SpringbootBase2.iml" filepath="$PROJECT_DIR$/SpringbootBase2/SpringbootBase2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo_1/Springboot_Base.iml" filepath="$PROJECT_DIR$/Demo_1/Springboot_Base.iml" />
+    </modules>
+  </component>
+</project>

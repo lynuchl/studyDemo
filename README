@@ -1,0 +1,5 @@
+1.持久层框架Jpa的使用 : extends JpaRepository、
+   H2的使用(H2是一个Java编写的关系型数据库，它可以被嵌入Java应用程序中使用，或者作为一个单独的数据库服务器运行) : 小型数据库，做测试用例时候使用、
+   Jpa提供的分页 ：extends PagingAndSortingRepository
+
+2.JdbcTemplate:
