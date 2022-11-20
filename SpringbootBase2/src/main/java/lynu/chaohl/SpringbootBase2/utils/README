@@ -1,3 +1,0 @@
-1.utils工具类包清单：
-    (1):json与bean的转化 见：JacksonJsonUtils
-    (2):String类型字符串处理 见：StringUtils
