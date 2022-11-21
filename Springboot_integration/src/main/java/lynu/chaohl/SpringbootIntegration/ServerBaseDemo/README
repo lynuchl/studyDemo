@@ -1,0 +1,36 @@
+Demo点：
+1.微服务后端基础流程测试: springboot+mybatis+mysql
+    (1):pom导包：mysql-connector-java、mybatis-spring-boot-starter
+    (2)引入自动生成器插件：见Pom文件
+    (3)mysql建表后，通过maven projects 列表执行插件脚本 ../resources/mybatis/generator/mybatis-generator.xml。给自动生成
+      的代码添加注解，交给spirng管理。注意重复执行脚本时，旧的xml文件不会被完全覆盖，而是新增内容，导致报错。
+    (4)yml配置文件的 数据源配置、mybatis配置。注意mybatis需要顶格配置。
+    (5)后端返回前端的统一数据结构：见文件 lynu.chaohl.SpringbootRedis.common.BaseResult
+
+2.lombook测试：
+    (1):pom导包：lombok
+
+3.swagger-ui测试：
+    (1):pom导包：springfox-swagger-ui、springfox-swagger2
+    (2):启动类添加注解 @EnableSwagger2
+    (3):Swagger版本兼容配置，否则会报错。
+        spring:
+          mvc:
+            pathmatch:
+              ## 2.6.x版本的spingboot不兼容swagger某些版本,需要添加的配置。
+              matching-strategy: ant_path_matcher
+    (4):使用注解：controller类上使用:@Api(tags = "") 方法上使用:@ApiOperation("")
+    (5):浏览器输入访问地址：http://localhost:8080/swagger-ui.html进入Swagger-ui的客户端。
+    (6):以上为Swagger-ui的默认配置，如果需要个性化配置，需要添加Swagger-ui.config配置类，进行个性化配置。
+
+4.后端对前端传入的数据进行验证测试：
+    (1):pom导包：validation-api、commons-validator
+
+5.日志测试：
+    (1):使用lombok的日志功能；使用@Slf4j注解，放在类上。
+    (2):使用spring中的AOP特性，做日志记录：详细配置见 lynu.chaohl.SpringbootRedis.common.log。根据自己定义的注解，添加
+        注解在方法上。
+
+6.yaml配置文件参数读取测试：
+    (1):配置详情见：application-data.yml
+    (2):详情见：src/test/java/lynu/chaohl/SpringbootBase/BaseTests/SpringbootBase/getYmlValueTest

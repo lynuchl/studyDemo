@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Demo_2" />
+        <module name="Springboot_integration" />
         <module name="Springboot_Redis" />
         <module name="SpringbootBase" />
         <module name="SpringbootRedis" />
@@ -17,6 +18,7 @@
       <module name="ChlCommonUtils" target="1.5" />
       <module name="Demo_2" target="1.8" />
       <module name="Java_Demo" target="1.8" />
+      <module name="Springboot_integration" target="1.8" />
       <module name="Springboot_Redis" target="1.8" />
       <module name="SpringbootBase" target="1.8" />
       <module name="SpringbootRedis" target="1.8" />

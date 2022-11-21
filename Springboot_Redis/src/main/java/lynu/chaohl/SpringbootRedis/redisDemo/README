@@ -1,0 +1,4 @@
+Demo点：
+1.Redis的基本使用。
+    (1):导包 spring-boot-starter-redis
+    (2):application-data.yml配置文件配置redis配置。
