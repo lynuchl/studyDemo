@@ -1,5 +1,5 @@
 server:
-  port: 16000
+  port: 16001
   servlet:
     # 应用的访问根路径
     context-path: /javaDemo
@@ -20,7 +20,7 @@ spring:
     password: 123456
 mybatis:
   mapper-locations: classpath:mybatis/mapper/*.xml
-  type-aliases-package: lynu.chaohl.SpringbootRedis.ServerBaseDemo.mapper
+  type-aliases-package: lynu.chaohl.SpringbootRedis.ServerBaseDemo.mapper,lynu.chaohl.SpringbootRedis.redisDemo.mapper
 #  datasource:
 #  #mybatis连接配置
 #    driver-class-name: org.h2.Driver
