@@ -1,0 +1,6 @@
+Demo点：
+1.Druid多数据源测试:
+    (1):导包：druid，创建双数据库，主数据库脚本见files/da_shell/muti_ds/user.sql，从库见：files/da_shell/muti_ds/city.sql
+    (2):多数据源配置见：application-data.yml
+    (3):代码参见：../lynu/chaohl/SpringbootIntegration/ServerDruidDemo
+    (4):注意springboot的默认数据源配置不可用。只能走config中的配置类的形式。

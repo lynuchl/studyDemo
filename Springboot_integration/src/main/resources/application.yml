@@ -1,5 +1,5 @@
 server:
-  port: 16000
+  port: 16002
   servlet:
     # 应用的访问根路径
     context-path: /javaDemo
@@ -13,9 +13,14 @@ spring:
     pathmatch:
      matching-strategy: ant_path_matcher
 
-mybatis:
-  mapper-locations: classpath:mybatis/mapper/*.xml
-  type-aliases-package: lynu.chaohl.SpringbootRedis.ServerBaseDemo.mapper
+#  datasource:
+#    druid:
+#      test-while-idle: false
+
+#多数据源的时候，此配置无效，且报错，暂时未发现原因。
+#mybatis:
+#  mapper-locations: classpath:mybatis/mapper/*.xml
+#  type-aliases-package: lynu.chaohl.SpringbootIntegration.ServerBaseDemo.mapper
 #  datasource:
 #  #mybatis连接配置
 #    driver-class-name: org.h2.Driver

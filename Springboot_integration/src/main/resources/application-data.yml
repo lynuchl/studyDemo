@@ -8,10 +8,38 @@ auto:
 #    生成随机值
     randomValue: ${random.value}
 
+#mybatis默认数据源配置
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/DemoDB?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=Asia/Shanghai&allowMultiQueries=true
     username: root
     password: 123456
+
+#mongodb配置
+  data:
+    mongodb:
+      host: localhost
+      database: mongoDBTest
+      port: 27017
+      username: root
+      password: root
+
+#主从库测试中的主库配置
+master:
+  datasource:
+    url: jdbc:mysql://localhost:3306/demodb_cluster?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: root
+    password: 123456
+    driverClassName: com.mysql.cj.jdbc.Driver
+
+
+cluster:
+  datasource:
+    url: jdbc:mysql://localhost:3306/demodb?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: root
+    password: 123456
+    driverClassName: com.mysql.cj.jdbc.Driver
+
+
 

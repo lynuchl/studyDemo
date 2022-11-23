@@ -15,7 +15,7 @@ spring:
 
 mybatis:
   mapper-locations: classpath:mybatis/mapper/*.xml
-  type-aliases-package: lynu.chaohl.SpringbootRedis.ServerBaseDemo.mapper,lynu.chaohl.SpringbootRedis.redisDemo.mapper
+  type-aliases-package: lynu.chaohl.SpringbootRedis.redisDemo.mapper
 #  datasource:
 #  #mybatis连接配置
 #    driver-class-name: org.h2.Driver
