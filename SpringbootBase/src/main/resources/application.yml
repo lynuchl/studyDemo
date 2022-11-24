@@ -13,9 +13,28 @@ spring:
     pathmatch:
      matching-strategy: ant_path_matcher
 
+     #include的值也可以改成*，但建议还是最小暴露原则，用啥开启啥
+#     springboot actuator监控配置
+#management:
+#  server:
+#    port: 16000
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+#     #启用配置里的info开头的变量
+##  info:
+##    env:
+##      enabled: true
+#  endpoint:
+#    health:
+##      enabled: true
+#      show-details: always
+
 mybatis:
   mapper-locations: classpath:mybatis/mapper/*.xml
   type-aliases-package: lynu.chaohl.SpringbootBase.ServerBaseDemo.mapper
+
 #  datasource:
 #  #mybatis连接配置
 #    driver-class-name: org.h2.Driver

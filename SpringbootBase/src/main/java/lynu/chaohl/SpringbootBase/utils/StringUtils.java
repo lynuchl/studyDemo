@@ -1,4 +1,4 @@
-package lynu.chaohl.SpringbootIntegration.utils;
+package lynu.chaohl.SpringbootBase.utils;
 
 import java.util.Collection;
 import java.util.List;

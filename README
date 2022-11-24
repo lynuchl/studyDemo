@@ -3,3 +3,5 @@
    Jpa提供的分页 ：extends PagingAndSortingRepository
 
 2.JdbcTemplate:
+
+3.各组件依赖的版本兼容是个大问题。

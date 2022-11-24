@@ -12,7 +12,21 @@ spring:
   mvc:
     pathmatch:
      matching-strategy: ant_path_matcher
-
+management:
+  server:
+    port: 16002
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+     #启用配置里的info开头的变量
+#  info:
+#    env:
+#      enabled: true
+  endpoint:
+    health:
+#      enabled: true
+      show-details: always
 #  datasource:
 #    druid:
 #      test-while-idle: false

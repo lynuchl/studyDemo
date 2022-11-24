@@ -1,4 +1,4 @@
-package lynu.chaohl.SpringbootIntegration;
+package lynu.chaohl.SpringbootBase;
 
 //import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;

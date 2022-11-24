@@ -1,4 +1,4 @@
-package lynu.chaohl.SpringbootIntegration.utils;
+package lynu.chaohl.SpringbootBase.utils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 

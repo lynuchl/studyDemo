@@ -1,4 +1,4 @@
-package lynu.chaohl.SpringbootIntegration.common.log;
+package lynu.chaohl.SpringbootBase.common.log;
 
 import java.lang.annotation.*;
 

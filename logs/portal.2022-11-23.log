@@ -1,0 +1,562 @@
+2022-11-23 22:32:46.974 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 43044 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2022-11-23 22:32:46.977 DEBUG l.c.S.SpringbootBaseApplication - [logStarting,56] - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-11-23 22:32:46.977 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2022-11-23 22:32:48.486 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2022-11-23 22:32:48.487 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2022-11-23 22:32:48.511 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-23 22:32:48.661 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2022-11-23 22:32:49.228 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-23 22:32:49.467 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2022-11-23 22:32:49.491 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2022-11-23 22:32:49.505 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2022-11-23 22:32:49.534 INFO s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2022-11-23 22:32:49.675 INFO l.c.S.SpringbootBaseApplication - [logStarted,61] - Started SpringbootBaseApplication in 3.152 seconds (JVM running for 4.16)
+2022-11-23 23:01:00.865 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 25220 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2022-11-23 23:01:00.868 DEBUG l.c.S.SpringbootBaseApplication - [logStarting,56] - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-11-23 23:01:00.868 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2022-11-23 23:01:02.223 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:01:02.224 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2022-11-23 23:01:02.225 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-23 23:01:02.378 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2022-11-23 23:01:03.164 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-23 23:01:03.415 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:01:03.432 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2022-11-23 23:01:03.448 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2022-11-23 23:01:03.453 WARN o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - [refresh,591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+2022-11-23 23:01:03.615 INFO o.a.c.h.Http11NioProtocol - [log,173] - Pausing ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:01:03.616 INFO o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+2022-11-23 23:01:03.619 INFO o.a.c.h.Http11NioProtocol - [log,173] - Stopping ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:01:03.628 INFO o.a.c.h.Http11NioProtocol - [log,173] - Destroying ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:01:03.661 ERROR o.s.b.SpringApplication - [reportFailure,824] - Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at lynu.chaohl.SpringbootBase.SpringbootBaseApplication.main(SpringbootBaseApplication.java:14)
+Caused by: java.lang.NullPointerException: null
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
+	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:37)
+	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+	at java.util.TimSort.sort(TimSort.java:220)
+	at java.util.Arrays.sort(Arrays.java:1438)
+	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:855)
+	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:57)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:138)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:135)
+	at com.google.common.collect.Iterators$7.transform(Iterators.java:750)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at com.google.common.collect.MultitransformedIterator.hasNext(MultitransformedIterator.java:52)
+	at com.google.common.collect.MultitransformedIterator.hasNext(MultitransformedIterator.java:50)
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:249)
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:209)
+	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:614)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:111)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:96)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:167)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	... 14 common frames omitted
+2022-11-23 23:19:29.177 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 43944 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2022-11-23 23:19:29.180 DEBUG l.c.S.SpringbootBaseApplication - [logStarting,56] - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-11-23 23:19:29.181 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2022-11-23 23:19:30.619 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:19:30.620 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2022-11-23 23:19:30.620 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-23 23:19:30.775 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2022-11-23 23:19:31.550 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-23 23:19:31.810 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:19:31.827 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2022-11-23 23:19:31.844 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2022-11-23 23:19:31.875 INFO s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2022-11-23 23:19:32.000 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_1
+2022-11-23 23:19:32.042 INFO l.c.S.SpringbootBaseApplication - [logStarted,61] - Started SpringbootBaseApplication in 3.42 seconds (JVM running for 4.38)
+2022-11-23 23:20:29.021 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 45140 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2022-11-23 23:20:29.025 DEBUG l.c.S.SpringbootBaseApplication - [logStarting,56] - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-11-23 23:20:29.025 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2022-11-23 23:20:30.786 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:20:30.787 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2022-11-23 23:20:30.787 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-23 23:20:30.945 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2022-11-23 23:20:31.979 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-23 23:20:32.260 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:20:32.277 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2022-11-23 23:20:32.292 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2022-11-23 23:20:32.324 INFO s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2022-11-23 23:20:32.447 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_1
+2022-11-23 23:20:32.489 INFO l.c.S.SpringbootBaseApplication - [logStarted,61] - Started SpringbootBaseApplication in 3.966 seconds (JVM running for 5.025)
+2022-11-23 23:30:38.854 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 43044 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2022-11-23 23:30:38.871 DEBUG l.c.S.SpringbootBaseApplication - [logStarting,56] - Running with Spring Boot v2.4.3, Spring v5.3.4
+2022-11-23 23:30:38.871 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,664] - The following profiles are active: data
+2022-11-23 23:30:41.257 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:30:41.258 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2022-11-23 23:30:41.258 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-11-23 23:30:41.390 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2022-11-23 23:30:42.306 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-23 23:30:43.046 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:30:43.066 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2022-11-23 23:30:43.081 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2022-11-23 23:30:43.113 INFO s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2022-11-23 23:30:43.276 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_1
+2022-11-23 23:30:43.278 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_2
+2022-11-23 23:30:43.327 INFO l.c.S.SpringbootBaseApplication - [logStarted,61] - Started SpringbootBaseApplication in 5.553 seconds (JVM running for 7.221)
+2022-11-23 23:33:54.605 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 44260 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2022-11-23 23:33:54.608 DEBUG l.c.S.SpringbootBaseApplication - [logStarting,56] - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-11-23 23:33:54.608 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2022-11-23 23:33:56.304 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:33:56.306 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2022-11-23 23:33:56.306 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-23 23:33:56.454 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2022-11-23 23:33:57.399 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-23 23:33:57.651 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:33:57.669 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2022-11-23 23:33:57.685 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2022-11-23 23:33:57.689 WARN o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - [refresh,591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+2022-11-23 23:33:57.829 INFO o.a.c.h.Http11NioProtocol - [log,173] - Pausing ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:33:57.829 INFO o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+2022-11-23 23:33:57.833 INFO o.a.c.h.Http11NioProtocol - [log,173] - Stopping ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:33:57.843 INFO o.a.c.h.Http11NioProtocol - [log,173] - Destroying ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:33:57.877 ERROR o.s.b.SpringApplication - [reportFailure,824] - Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at lynu.chaohl.SpringbootBase.SpringbootBaseApplication.main(SpringbootBaseApplication.java:14)
+Caused by: java.lang.NullPointerException: null
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
+	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:37)
+	at java.util.TimSort.binarySort(TimSort.java:296)
+	at java.util.TimSort.sort(TimSort.java:221)
+	at java.util.Arrays.sort(Arrays.java:1438)
+	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:855)
+	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:57)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:138)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:135)
+	at com.google.common.collect.Iterators$7.transform(Iterators.java:750)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at com.google.common.collect.MultitransformedIterator.hasNext(MultitransformedIterator.java:52)
+	at com.google.common.collect.MultitransformedIterator.hasNext(MultitransformedIterator.java:50)
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:249)
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:209)
+	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:614)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:111)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:96)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:167)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	... 14 common frames omitted
+2022-11-23 23:34:17.448 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 27692 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2022-11-23 23:34:17.451 DEBUG l.c.S.SpringbootBaseApplication - [logStarting,56] - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-11-23 23:34:17.451 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2022-11-23 23:34:18.881 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:34:18.881 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2022-11-23 23:34:18.881 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-23 23:34:19.031 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2022-11-23 23:34:19.810 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-23 23:34:20.078 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:34:20.095 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2022-11-23 23:34:20.111 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2022-11-23 23:34:20.149 INFO s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2022-11-23 23:34:20.260 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_1
+2022-11-23 23:34:20.302 INFO l.c.S.SpringbootBaseApplication - [logStarted,61] - Started SpringbootBaseApplication in 3.334 seconds (JVM running for 4.288)
+2022-11-23 23:34:46.426 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 43920 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2022-11-23 23:34:46.429 DEBUG l.c.S.SpringbootBaseApplication - [logStarting,56] - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-11-23 23:34:46.429 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2022-11-23 23:34:48.262 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:34:48.263 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2022-11-23 23:34:48.263 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-23 23:34:48.482 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2022-11-23 23:34:49.374 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-23 23:34:49.632 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:34:49.649 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2022-11-23 23:34:49.672 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2022-11-23 23:34:49.676 WARN o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - [refresh,591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+2022-11-23 23:34:49.818 INFO o.a.c.h.Http11NioProtocol - [log,173] - Pausing ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:34:49.819 INFO o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+2022-11-23 23:34:49.822 INFO o.a.c.h.Http11NioProtocol - [log,173] - Stopping ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:34:49.823 INFO o.a.c.h.Http11NioProtocol - [log,173] - Destroying ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:34:49.854 ERROR o.s.b.SpringApplication - [reportFailure,824] - Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at lynu.chaohl.SpringbootBase.SpringbootBaseApplication.main(SpringbootBaseApplication.java:14)
+Caused by: java.lang.NullPointerException: null
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
+	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:37)
+	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+	at java.util.TimSort.sort(TimSort.java:220)
+	at java.util.Arrays.sort(Arrays.java:1438)
+	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:855)
+	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:57)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:138)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:135)
+	at com.google.common.collect.Iterators$7.transform(Iterators.java:750)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at com.google.common.collect.MultitransformedIterator.hasNext(MultitransformedIterator.java:52)
+	at com.google.common.collect.MultitransformedIterator.hasNext(MultitransformedIterator.java:50)
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:249)
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:209)
+	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:614)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:111)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:96)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:167)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	... 14 common frames omitted
+2022-11-23 23:35:06.578 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 45696 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2022-11-23 23:35:06.580 DEBUG l.c.S.SpringbootBaseApplication - [logStarting,56] - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-11-23 23:35:06.580 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2022-11-23 23:35:07.977 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:35:07.978 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2022-11-23 23:35:07.979 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-23 23:35:08.165 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2022-11-23 23:35:09.035 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-23 23:35:09.322 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:35:09.341 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2022-11-23 23:35:09.357 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2022-11-23 23:35:09.397 INFO s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2022-11-23 23:35:09.511 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_1
+2022-11-23 23:35:09.554 INFO l.c.S.SpringbootBaseApplication - [logStarted,61] - Started SpringbootBaseApplication in 3.421 seconds (JVM running for 4.411)
+2022-11-23 23:36:56.780 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-23 23:39:07.324 INFO c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+2022-11-23 23:39:07.740 INFO c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+2022-11-23 23:44:24.865 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 46004 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2022-11-23 23:44:24.868 DEBUG l.c.S.SpringbootBaseApplication - [logStarting,56] - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-11-23 23:44:24.869 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2022-11-23 23:44:26.979 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:44:26.980 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2022-11-23 23:44:26.980 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-23 23:44:27.197 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2022-11-23 23:44:28.268 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-23 23:44:28.541 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:44:28.558 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2022-11-23 23:44:28.573 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2022-11-23 23:44:28.604 INFO s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2022-11-23 23:44:28.728 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_1
+2022-11-23 23:44:28.730 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_2
+2022-11-23 23:44:28.776 INFO l.c.S.SpringbootBaseApplication - [logStarted,61] - Started SpringbootBaseApplication in 4.415 seconds (JVM running for 5.39)
+2022-11-23 23:45:00.750 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 44756 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2022-11-23 23:45:00.752 DEBUG l.c.S.SpringbootBaseApplication - [logStarting,56] - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-11-23 23:45:00.753 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2022-11-23 23:45:02.587 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:45:02.587 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2022-11-23 23:45:02.588 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-23 23:45:02.768 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2022-11-23 23:45:03.831 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-23 23:45:04.092 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:45:04.109 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2022-11-23 23:45:04.125 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2022-11-23 23:45:04.157 INFO s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2022-11-23 23:45:04.280 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_1
+2022-11-23 23:45:04.281 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_2
+2022-11-23 23:45:04.324 INFO l.c.S.SpringbootBaseApplication - [logStarted,61] - Started SpringbootBaseApplication in 4.037 seconds (JVM running for 5.08)
+2022-11-23 23:48:00.702 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 43816 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2022-11-23 23:48:00.705 DEBUG l.c.S.SpringbootBaseApplication - [logStarting,56] - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-11-23 23:48:00.706 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2022-11-23 23:48:02.525 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:48:02.526 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2022-11-23 23:48:02.527 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-23 23:48:02.692 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2022-11-23 23:48:03.953 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-23 23:48:04.212 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:48:04.239 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2022-11-23 23:48:04.256 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2022-11-23 23:48:04.298 INFO s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2022-11-23 23:48:04.411 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_1
+2022-11-23 23:48:04.413 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_2
+2022-11-23 23:48:04.414 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingDELETE_1
+2022-11-23 23:48:04.416 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_3
+2022-11-23 23:48:04.417 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_4
+2022-11-23 23:48:04.418 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_5
+2022-11-23 23:48:04.420 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_6
+2022-11-23 23:48:04.421 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_7
+2022-11-23 23:48:04.422 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_8
+2022-11-23 23:48:04.423 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_9
+2022-11-23 23:48:04.424 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_10
+2022-11-23 23:48:04.425 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_11
+2022-11-23 23:48:04.428 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_12
+2022-11-23 23:48:04.430 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_13
+2022-11-23 23:48:04.432 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_14
+2022-11-23 23:48:04.433 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_15
+2022-11-23 23:48:04.434 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_16
+2022-11-23 23:48:04.435 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_17
+2022-11-23 23:48:04.437 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_18
+2022-11-23 23:48:04.478 INFO l.c.S.SpringbootBaseApplication - [logStarted,61] - Started SpringbootBaseApplication in 4.244 seconds (JVM running for 5.244)
+2022-11-23 23:48:39.489 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 44800 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2022-11-23 23:48:39.493 DEBUG l.c.S.SpringbootBaseApplication - [logStarting,56] - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-11-23 23:48:39.493 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2022-11-23 23:48:41.179 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:48:41.180 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2022-11-23 23:48:41.180 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-23 23:48:41.348 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2022-11-23 23:48:42.380 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-23 23:48:42.775 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:48:42.813 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2022-11-23 23:48:42.835 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2022-11-23 23:48:42.884 INFO s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2022-11-23 23:48:43.014 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_1
+2022-11-23 23:48:43.017 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_2
+2022-11-23 23:48:43.019 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingDELETE_1
+2022-11-23 23:48:43.020 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_3
+2022-11-23 23:48:43.022 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_4
+2022-11-23 23:48:43.024 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_5
+2022-11-23 23:48:43.026 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_6
+2022-11-23 23:48:43.027 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_7
+2022-11-23 23:48:43.028 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_8
+2022-11-23 23:48:43.030 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_9
+2022-11-23 23:48:43.031 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_10
+2022-11-23 23:48:43.033 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_11
+2022-11-23 23:48:43.034 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_12
+2022-11-23 23:48:43.037 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_13
+2022-11-23 23:48:43.038 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_14
+2022-11-23 23:48:43.040 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_15
+2022-11-23 23:48:43.041 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_16
+2022-11-23 23:48:43.043 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_17
+2022-11-23 23:48:43.044 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_18
+2022-11-23 23:48:43.093 INFO l.c.S.SpringbootBaseApplication - [logStarted,61] - Started SpringbootBaseApplication in 4.092 seconds (JVM running for 5.16)
+2022-11-23 23:50:10.029 ERROR o.s.b.SpringApplication - [reportFailure,824] - Application run failed
+org.yaml.snakeyaml.scanner.ScannerException: while scanning an alias
+ in 'reader', line 23, column 18:
+            include: *
+                     ^
+unexpected character found 
+(10)
+ in 'reader', line 23, column 19:
+            include: *
+                      ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.scanAnchor(ScannerImpl.java:1515)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchAlias(ScannerImpl.java:957)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:406)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:251)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingValue.produce(ParserImpl.java:660)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:166)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:59)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:45)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:140)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:119)
+	at org.yaml.snakeyaml.composer.Composer.composeScalarNode(Composer.java:214)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:184)
+	at org.yaml.snakeyaml.composer.Composer.composeKeyNode(Composer.java:310)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:301)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:286)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:188)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:314)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:305)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:286)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:188)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:314)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:305)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:286)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:188)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:314)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:305)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:286)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:188)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:314)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:305)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:286)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:188)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:115)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:135)
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.getData(OriginTrackedYamlLoader.java:99)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:514)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:198)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:166)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:84)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:54)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:36)
+	at org.springframework.boot.context.config.ConfigDataLoaders.load(ConfigDataLoaders.java:107)
+	at org.springframework.boot.context.config.ConfigDataImporter.load(ConfigDataImporter.java:128)
+	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:86)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:116)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:240)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:227)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:102)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:94)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:102)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:87)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at lynu.chaohl.SpringbootBase.SpringbootBaseApplication.main(SpringbootBaseApplication.java:14)
+2022-11-23 23:50:26.007 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 44140 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2022-11-23 23:50:26.009 DEBUG l.c.S.SpringbootBaseApplication - [logStarting,56] - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-11-23 23:50:26.010 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2022-11-23 23:50:27.427 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:50:27.427 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2022-11-23 23:50:27.428 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-23 23:50:27.573 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2022-11-23 23:50:28.407 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-23 23:50:28.672 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:50:28.688 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2022-11-23 23:50:28.704 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2022-11-23 23:50:28.744 INFO s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2022-11-23 23:50:28.855 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_1
+2022-11-23 23:50:28.857 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_2
+2022-11-23 23:50:28.858 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingDELETE_1
+2022-11-23 23:50:28.860 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_3
+2022-11-23 23:50:28.861 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_4
+2022-11-23 23:50:28.862 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_5
+2022-11-23 23:50:28.863 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_6
+2022-11-23 23:50:28.864 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_7
+2022-11-23 23:50:28.866 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_8
+2022-11-23 23:50:28.867 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_9
+2022-11-23 23:50:28.868 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_10
+2022-11-23 23:50:28.869 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_11
+2022-11-23 23:50:28.870 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_12
+2022-11-23 23:50:28.872 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_13
+2022-11-23 23:50:28.873 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_14
+2022-11-23 23:50:28.874 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_15
+2022-11-23 23:50:28.875 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_16
+2022-11-23 23:50:28.876 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_17
+2022-11-23 23:50:28.878 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_18
+2022-11-23 23:50:28.917 INFO l.c.S.SpringbootBaseApplication - [logStarted,61] - Started SpringbootBaseApplication in 3.388 seconds (JVM running for 4.327)
+2022-11-23 23:50:52.945 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-23 23:52:39.641 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 39552 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2022-11-23 23:52:39.644 DEBUG l.c.S.SpringbootBaseApplication - [logStarting,56] - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-11-23 23:52:39.644 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2022-11-23 23:52:41.599 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:52:41.600 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2022-11-23 23:52:41.600 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-23 23:52:41.791 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2022-11-23 23:52:42.994 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-23 23:52:43.261 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:52:43.280 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2022-11-23 23:52:43.303 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2022-11-23 23:52:43.342 INFO s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2022-11-23 23:52:43.452 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_1
+2022-11-23 23:52:43.455 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingDELETE_1
+2022-11-23 23:52:43.457 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_2
+2022-11-23 23:52:43.458 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_3
+2022-11-23 23:52:43.460 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_4
+2022-11-23 23:52:43.461 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_5
+2022-11-23 23:52:43.462 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_6
+2022-11-23 23:52:43.463 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_7
+2022-11-23 23:52:43.465 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_8
+2022-11-23 23:52:43.466 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_9
+2022-11-23 23:52:43.468 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_10
+2022-11-23 23:52:43.471 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_11
+2022-11-23 23:52:43.472 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_12
+2022-11-23 23:52:43.476 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_13
+2022-11-23 23:52:43.477 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_14
+2022-11-23 23:52:43.478 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_15
+2022-11-23 23:52:43.479 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_16
+2022-11-23 23:52:43.480 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_17
+2022-11-23 23:52:43.482 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_18
+2022-11-23 23:52:43.523 INFO l.c.S.SpringbootBaseApplication - [logStarted,61] - Started SpringbootBaseApplication in 4.353 seconds (JVM running for 5.367)
+2022-11-23 23:54:46.279 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 42356 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2022-11-23 23:54:46.281 DEBUG l.c.S.SpringbootBaseApplication - [logStarting,56] - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-11-23 23:54:46.281 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2022-11-23 23:54:48.256 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:54:48.257 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2022-11-23 23:54:48.257 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-23 23:54:48.456 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2022-11-23 23:54:49.545 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-23 23:54:49.822 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:54:49.840 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2022-11-23 23:54:49.854 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2022-11-23 23:54:49.893 INFO s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2022-11-23 23:54:50.003 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_1
+2022-11-23 23:54:50.005 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingDELETE_1
+2022-11-23 23:54:50.007 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_2
+2022-11-23 23:54:50.009 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_3
+2022-11-23 23:54:50.010 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_4
+2022-11-23 23:54:50.011 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_5
+2022-11-23 23:54:50.012 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_6
+2022-11-23 23:54:50.014 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_7
+2022-11-23 23:54:50.015 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_8
+2022-11-23 23:54:50.016 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_9
+2022-11-23 23:54:50.018 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_10
+2022-11-23 23:54:50.019 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_11
+2022-11-23 23:54:50.021 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_12
+2022-11-23 23:54:50.022 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_13
+2022-11-23 23:54:50.023 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_14
+2022-11-23 23:54:50.024 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_15
+2022-11-23 23:54:50.025 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_16
+2022-11-23 23:54:50.026 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_17
+2022-11-23 23:54:50.028 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_18
+2022-11-23 23:54:50.068 INFO l.c.S.SpringbootBaseApplication - [logStarted,61] - Started SpringbootBaseApplication in 4.385 seconds (JVM running for 5.406)
+2022-11-23 23:55:05.335 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-23 23:55:56.849 INFO c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+2022-11-23 23:55:57.132 INFO c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+2022-11-23 23:57:20.047 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 44684 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2022-11-23 23:57:20.051 DEBUG l.c.S.SpringbootBaseApplication - [logStarting,56] - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-11-23 23:57:20.052 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2022-11-23 23:57:21.949 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:57:21.950 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2022-11-23 23:57:21.951 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-23 23:57:22.182 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2022-11-23 23:57:23.095 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-23 23:57:23.359 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2022-11-23 23:57:23.377 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2022-11-23 23:57:23.393 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2022-11-23 23:57:23.433 INFO s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2022-11-23 23:57:23.549 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_1
+2022-11-23 23:57:23.550 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingDELETE_1
+2022-11-23 23:57:23.551 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_2
+2022-11-23 23:57:23.553 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_3
+2022-11-23 23:57:23.554 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_4
+2022-11-23 23:57:23.555 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_5
+2022-11-23 23:57:23.557 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_6
+2022-11-23 23:57:23.558 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_7
+2022-11-23 23:57:23.559 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_8
+2022-11-23 23:57:23.561 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_9
+2022-11-23 23:57:23.562 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_10
+2022-11-23 23:57:23.563 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_11
+2022-11-23 23:57:23.564 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_12
+2022-11-23 23:57:23.566 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_13
+2022-11-23 23:57:23.567 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_14
+2022-11-23 23:57:23.568 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_15
+2022-11-23 23:57:23.569 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_16
+2022-11-23 23:57:23.570 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_17
+2022-11-23 23:57:23.571 INFO s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: handleUsingGET_18
+2022-11-23 23:57:23.611 INFO l.c.S.SpringbootBaseApplication - [logStarted,61] - Started SpringbootBaseApplication in 3.977 seconds (JVM running for 4.88)

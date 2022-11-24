@@ -1,12 +1,12 @@
-package lynu.chaohl.SpringbootIntegration.ServerBaseDemo.controller;
+package lynu.chaohl.SpringbootBase.ServerBaseDemo.controller;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity.ServerBaseDemo;
-import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.service.ServerBaseDemoService;
-import lynu.chaohl.SpringbootIntegration.common.BaseResult;
-import lynu.chaohl.SpringbootIntegration.common.log.OperationLog;
+import lynu.chaohl.SpringbootBase.ServerBaseDemo.entity.ServerBaseDemo;
+import lynu.chaohl.SpringbootBase.ServerBaseDemo.service.ServerBaseDemoService;
+import lynu.chaohl.SpringbootBase.common.BaseResult;
+import lynu.chaohl.SpringbootBase.common.log.OperationLog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

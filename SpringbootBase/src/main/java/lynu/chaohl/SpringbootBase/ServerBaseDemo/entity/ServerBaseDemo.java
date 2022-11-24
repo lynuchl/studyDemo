@@ -1,4 +1,4 @@
-package lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity;
+package lynu.chaohl.SpringbootBase.ServerBaseDemo.entity;
 
 import java.io.Serializable;
 

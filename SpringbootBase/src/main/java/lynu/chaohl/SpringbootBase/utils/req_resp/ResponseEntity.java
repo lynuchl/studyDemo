@@ -1,4 +1,4 @@
-package lynu.chaohl.SpringbootIntegration.utils.req_resp;
+package lynu.chaohl.SpringbootBase.utils.req_resp;
 
 import lombok.Data;
 

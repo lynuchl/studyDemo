@@ -1,9 +1,9 @@
-package lynu.chaohl.SpringbootIntegration.common.log;
+package lynu.chaohl.SpringbootBase.common.log;
 
 //import com.wonders.AIWebApi.util.JacksonJsonUtils;
 //import com.wonders.AIWebApi.util.StringUtils;
-import lynu.chaohl.SpringbootIntegration.utils.JacksonJsonUtils;
-import lynu.chaohl.SpringbootIntegration.utils.StringUtils;
+import lynu.chaohl.SpringbootBase.utils.JacksonJsonUtils;
+import lynu.chaohl.SpringbootBase.utils.StringUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.aspectj.lang.JoinPoint;
@@ -44,7 +44,7 @@ public class OperationLogAspect {
 
     //定义切点 @Pointcut
     //在注解的位置切入代码
-    @Pointcut("@annotation(lynu.chaohl.SpringbootIntegration.common.log.OperationLog)")
+    @Pointcut("@annotation(lynu.chaohl.SpringbootBase.common.log.OperationLog)")
     public void logPointCut() {
     }
 

@@ -1,6 +1,6 @@
-package lynu.chaohl.SpringbootIntegration.ServerBaseDemo.mapper;
+package lynu.chaohl.SpringbootBase.ServerBaseDemo.mapper;
 
-import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity.ServerBaseDemo;
+import lynu.chaohl.SpringbootBase.ServerBaseDemo.entity.ServerBaseDemo;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 

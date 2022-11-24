@@ -1,4 +1,4 @@
-package lynu.chaohl.SpringbootIntegration.common;
+package lynu.chaohl.SpringbootBase.common;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
