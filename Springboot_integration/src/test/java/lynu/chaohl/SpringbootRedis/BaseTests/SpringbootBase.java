@@ -1,12 +1,14 @@
 package lynu.chaohl.SpringbootRedis.BaseTests;
 
 import lombok.extern.slf4j.Slf4j;
+import lynu.chaohl.SpringbootIntegration.websocket.service.WebSocketInvokeService;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @Slf4j
-@SpringBootTest
+@SpringBootTest(classes = SpringbootBase.class)
 public class SpringbootBase {
 
         @Value("${auto.field.title}")
@@ -17,6 +19,16 @@ public class SpringbootBase {
 
         @Value("${auto.field.randomValue}")
         private String randomValue;
+
+
+//        @Autowired
+//        private WebSocketInvokeService webSocketInvokeService=new WebSocketInvokeService();
+//
+//        @Test
+//        public void InvokeTest(){
+//
+//            webSocketInvokeService.InvokeTest();
+//        }
 
     @Test
     public void Test1(){

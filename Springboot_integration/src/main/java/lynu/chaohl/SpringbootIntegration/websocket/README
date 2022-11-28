@@ -1,0 +1,2 @@
+Demo点：通过websocket长连接，实现前后端长时间通信，传输数据。适用于一些时实数据的传输。
+前端连接测试html见：websocket-client.html，需要和前端进行联调测试。

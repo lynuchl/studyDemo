@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/SpringbootBase/SpringbootBase.iml" filepath="$PROJECT_DIR$/SpringbootBase/SpringbootBase.iml" />
       <module fileurl="file://$PROJECT_DIR$/Springboot_Redis/Springboot_Redis.iml" filepath="$PROJECT_DIR$/Springboot_Redis/Springboot_Redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/Springboot_integration/Springboot_integration.iml" filepath="$PROJECT_DIR$/Springboot_integration/Springboot_integration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-dubbo-client/springboot-dubbo-client.iml" filepath="$PROJECT_DIR$/springboot-dubbo-client/springboot-dubbo-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-dubbo-server/springboot-dubbo-server.iml" filepath="$PROJECT_DIR$/springboot-dubbo-server/springboot-dubbo-server.iml" />
     </modules>
   </component>
 </project>

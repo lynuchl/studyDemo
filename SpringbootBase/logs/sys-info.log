@@ -1,0 +1,3 @@
+2022-11-28 18:08:42.491 INFO l.c.S.B.SpringbootBase - [logStarting,55] - Starting SpringbootBase using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 20984 (started by zz in E:\StudyDemo\Java_Demo\SpringbootBase)
+2022-11-28 18:08:42.517 INFO l.c.S.B.SpringbootBase - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2022-11-28 18:08:42.698 INFO l.c.S.B.SpringbootBase - [logStarted,61] - Started SpringbootBase in 0.572 seconds (JVM running for 2.147)

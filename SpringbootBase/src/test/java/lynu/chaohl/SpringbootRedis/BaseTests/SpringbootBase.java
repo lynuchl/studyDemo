@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @Slf4j
-@SpringBootTest
+@SpringBootTest(classes =SpringbootBase.class )
 public class SpringbootBase {
 
         @Value("${auto.field.title}")
