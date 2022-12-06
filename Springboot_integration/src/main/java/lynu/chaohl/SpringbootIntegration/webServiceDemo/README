@@ -1,0 +1,2 @@
+Demo点：
+springboot项目与webService接口对接，数据参数为XML，返回的结果也是XML，但对其进行JSON格式化。

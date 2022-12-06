@@ -7,7 +7,7 @@ auto:
     desc: ${auto.field.name}正在做${auto.field.title}
 #    生成随机值
     randomValue: ${random.value}
-
+propertiesTest: 这是一个swagger的Demo测试!!!
 #mybatis默认数据源配置
 spring:
   datasource:

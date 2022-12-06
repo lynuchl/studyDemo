@@ -1,0 +1,2 @@
+Demo点：
+1.@ConditionalOnProperty注解，使用yml配置文件参数的值来控制bean是否加载。见：ConditionalOnPropertyUse

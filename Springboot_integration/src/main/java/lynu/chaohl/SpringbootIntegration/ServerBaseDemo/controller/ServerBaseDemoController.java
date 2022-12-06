@@ -5,7 +5,7 @@ import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity.ServerBaseDemo;
 import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.service.ServerBaseDemoService;
-import lynu.chaohl.SpringbootIntegration.common.BaseResult;
+import lynu.chaohl.SpringbootIntegration.common.HttpResp.BaseResult;
 import lynu.chaohl.SpringbootIntegration.common.log.OperationLog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,7 +23,7 @@ public class ServerBaseDemoController {
     private ServerBaseDemoService serverBaseDemoService;
 
     @OperationLog(apiName = "这是一个swagger的Demo测试")
-    @ApiOperation("这是一个swagger的Demo测试")
+    @ApiOperation("${propertiesTest}")
     @PostMapping("/insert")
     public BaseResult<String> insert(@RequestBody ServerBaseDemo sbd){
 
