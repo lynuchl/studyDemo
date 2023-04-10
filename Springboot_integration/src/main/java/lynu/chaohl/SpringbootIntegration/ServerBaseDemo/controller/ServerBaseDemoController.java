@@ -8,10 +8,10 @@ import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.service.ServerBaseDemoSe
 import lynu.chaohl.SpringbootIntegration.common.HttpResp.BaseResult;
 import lynu.chaohl.SpringbootIntegration.common.log.OperationLog;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.IOException;
 
 @RestController
 @Api(tags = "微服务后端基础流程测试: springboot+mybatis+mysql")
@@ -31,5 +31,15 @@ public class ServerBaseDemoController {
         log.info("hello world");
 
         return BaseResult.success("hello world");
+    }
+
+
+    @ApiOperation("文件上传")
+    @PostMapping("/uploadFile")
+    public BaseResult<Long> uploadFile(@RequestParam("file") MultipartFile file) throws IOException {
+        if (file == null) {
+            throw new RuntimeException("请选择需要上传的文件");
+        }
+        return BaseResult.success(serverBaseDemoService.uploadImage(file));
     }
 }

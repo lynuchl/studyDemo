@@ -1,3 +1,5 @@
 1.utils工具类包清单：
     (1):json与bean的转化 见：JacksonJsonUtils
     (2):String类型字符串处理 见：StringUtils
+    (3):唯一id处理 见：IdWorkerUtils  备注：有那么多的id处理的轮子，为什么还要新造一个？
+    (4):文件信息处理 见：FileUtils

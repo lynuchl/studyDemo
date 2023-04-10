@@ -68,4 +68,22 @@
       testname = #{testname,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <!--mybatis写法模板-->
+  <!--批量插入数据集合-->
+  <insert id="insertQCR" parameterType="java.util.List">
+    INSERT INTO serverbasedemo
+    (
+    testid,
+    testname
+    )
+    VALUES
+    <foreach collection="list" item="bean" index="index" separator="," >
+      (
+      #{bean.testid},
+      #{bean.testname}
+      )
+    </foreach>
+
+  </insert>
 </mapper>

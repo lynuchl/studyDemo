@@ -10,13 +10,13 @@ auto:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/DemoDB?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    url: jdbc:mysql://192.168.1.117:3306/demodb?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=Asia/Shanghai&allowMultiQueries=true
     username: root
-    password: 123456
+    password: root
 
     ## Redis 配置
   redis:
-    host: 127.0.0.1
+    host: 192.168.1.117
     port: 6379
     ## Redis数据库索引（默认为0）
     database: 0

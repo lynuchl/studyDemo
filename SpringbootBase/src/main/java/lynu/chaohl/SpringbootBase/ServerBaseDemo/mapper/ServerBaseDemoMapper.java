@@ -15,6 +15,8 @@ public interface ServerBaseDemoMapper {
 
     ServerBaseDemo selectByPrimaryKey(Integer id);
 
+    ServerBaseDemo selectByName(String name);
+
     int updateByPrimaryKeySelective(ServerBaseDemo record);
 
     int updateByPrimaryKey(ServerBaseDemo record);

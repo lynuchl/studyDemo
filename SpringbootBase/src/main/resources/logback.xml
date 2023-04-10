@@ -58,18 +58,18 @@
     </appender>
 
     <!-- 接口调用日志输出  -->
-    <appender name="sys-interface" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${log.path}/interfaceInvocation.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <!-- 按天回滚 daily -->
-            <fileNamePattern>${log.path}/portal.%d{yyyy-MM-dd}.log</fileNamePattern>
-            <!-- 日志最大的历史 180天 -->
-            <maxHistory>60</maxHistory>
-        </rollingPolicy>
-        <encoder>
-            <pattern>${log.pattern}</pattern>
-        </encoder>
-    </appender>
+    <!--<appender name="sys-interface" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+        <!--<file>${log.path}/interfaceInvocation.log</file>-->
+        <!--<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+            <!--&lt;!&ndash; 按天回滚 daily &ndash;&gt;-->
+            <!--<fileNamePattern>${log.path}/portal.%d{yyyy-MM-dd}.log</fileNamePattern>-->
+            <!--&lt;!&ndash; 日志最大的历史 180天 &ndash;&gt;-->
+            <!--<maxHistory>60</maxHistory>-->
+        <!--</rollingPolicy>-->
+        <!--<encoder>-->
+            <!--<pattern>${log.pattern}</pattern>-->
+        <!--</encoder>-->
+    <!--</appender>-->
 
 
     <!-- 系统模块日志级别控制  输出位置需要注意-->
@@ -87,6 +87,6 @@
     <root level="info">
         <appender-ref ref="file_info"/>
         <appender-ref ref="file_error"/>
-        <appender-ref ref="sys-interface"/>
+        <!--<appender-ref ref="sys-interface"/>-->
     </root>
 </configuration>

@@ -34,3 +34,10 @@ Demo点：
 6.yaml配置文件参数读取测试：
     (1):配置详情见：application-data.yml
     (2):详情见：src/test/java/lynu/chaohl/SpringbootBase/BaseTests/SpringbootBase/getYmlValueTest
+
+7.文件上传:
+    (1):代码逻辑：将文件上传到项目的根目录下，将文件转成实例化属性并放入到缓存中，在保存实例的时候将路径存放到数据库中
+    (2):详见：lynu.chaohl.SpringbootIntegration.ServerBaseDemo.controller.ServerBaseDemoController.uploadFile()
+
+8.本地缓存技术：Caffeine
+    (1):详见：https://blog.csdn.net/w727655308/article/details/121623776

@@ -1,0 +1,3 @@
+Demo点：InitBinder测试
+1.InitBinder用户格式化前端请求的数据，但是不如直接转成JSON的然后再转成bean的@RequestBody注解。详细的区别未知，
+吃饭去了。
