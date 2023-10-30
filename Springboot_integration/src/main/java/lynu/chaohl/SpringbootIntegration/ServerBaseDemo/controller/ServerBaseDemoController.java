@@ -4,6 +4,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity.ServerBaseDemo;
+import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity.County;
 import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.service.ServerBaseDemoService;
 import lynu.chaohl.SpringbootIntegration.common.HttpResp.BaseResult;
 import lynu.chaohl.SpringbootIntegration.common.log.OperationLog;
@@ -32,6 +33,18 @@ public class ServerBaseDemoController {
 
         return BaseResult.success("hello world");
     }
+
+//    @OperationLog(apiName = "mybatis测试")
+//    @ApiOperation("mybatis测试")
+//    @PostMapping("/insertCity")
+//    public BaseResult<String> insertCity(@RequestBody County record){
+//
+//        if (serverBaseDemoService.insertCounty(record)==0)
+//            return BaseResult.fail("插入失败");
+//
+//
+//        return BaseResult.success("插入成功");
+//    }
 
 
     @ApiOperation("文件上传")

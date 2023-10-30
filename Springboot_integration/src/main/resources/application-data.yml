@@ -63,5 +63,10 @@ file:
   size:
     limit: 50MB
 
+#远程调用第三方的接口
+feign:
+  client:
+    url: http://192.168.1.100:5800/HCenter1
+
 
 

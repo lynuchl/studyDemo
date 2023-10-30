@@ -53,10 +53,36 @@ public class ServerBaseDemoController {
         serverBaseDemoService.selectByName(name);
         Date endDate=new Date();
         Long time=endDate.getTime()-startDate.getTime();
-        log.info(Long.toString(time));
+        log.info(Long.toString(time)+"推送成功！！！");
 
         return BaseResult.success("hello world");
     }
+
+    @ApiOperation("这是多推送的Demo测试")
+    @PostMapping("/indexTest2")
+    public BaseResult<String> indexTest2(String name){
+
+//        for (int i=0;i<10000;i++){
+//
+//            ServerBaseDemo serverBaseDemo =new ServerBaseDemo();
+//            serverBaseDemo.setId(i+1);
+//            serverBaseDemo.setTestid(i+1);
+//            serverBaseDemo.setTestname("chaohl"+i);
+//
+//            serverBaseDemoService.insert(serverBaseDemo);
+//
+//            System.out.println("执行的顺序："+i);
+//        }
+        Date startDate=new Date();
+        serverBaseDemoService.selectByName(name);
+        Date endDate=new Date();
+        Long time=endDate.getTime()-startDate.getTime();
+        log.info(Long.toString(time)+"第二次推送成功！！！");
+
+        return BaseResult.success("hello world");
+    }
+
+
 
     @OperationLog(apiName = "这是一个swagger的Demo测试")
     @ApiOperation("这是三个swagger的Demo测试")
@@ -87,6 +113,13 @@ public class ServerBaseDemoController {
     @GetMapping(value = "/Restful/{id}")
     @ApiOperation("Restful风格，单多参一样，get请求，@PathVariable")
     public BaseResult<ServerBaseDemo> findById(@PathVariable Integer id) {
+
+        return BaseResult.success("以“/”方式来获取参数值");
+    }
+
+    @GetMapping(value = "/Restful/testGet")
+    @ApiOperation("Restful风格，单多参一样，get请求，@PathVariable")
+    public BaseResult<ServerBaseDemo> testGet() {
 
         return BaseResult.success("以“/”方式来获取参数值");
     }

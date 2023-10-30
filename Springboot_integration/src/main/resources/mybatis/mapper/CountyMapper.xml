@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="lynu.chaohl.SpringbootIntegration.ServerBaseDemo.mapper.CountyMapper">
+  <resultMap id="BaseResultMap" type="lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity.County">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="countyCode" jdbcType="VARCHAR" property="countycode" />
+    <result column="countyName" jdbcType="VARCHAR" property="countyname" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, countyCode, countyName
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from county
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from county
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity.County">
+    insert into county (id, countyCode, countyName
+      )
+    values (#{id,jdbcType=INTEGER}, #{countycode,jdbcType=VARCHAR}, #{countyname,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity.County">
+    insert into county
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="countycode != null">
+        countyCode,
+      </if>
+      <if test="countyname != null">
+        countyName,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="countycode != null">
+        #{countycode,jdbcType=VARCHAR},
+      </if>
+      <if test="countyname != null">
+        #{countyname,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity.County">
+    update county
+    <set>
+      <if test="countycode != null">
+        countyCode = #{countycode,jdbcType=VARCHAR},
+      </if>
+      <if test="countyname != null">
+        countyName = #{countyname,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity.County">
+    update county
+    set countyCode = #{countycode,jdbcType=VARCHAR},
+      countyName = #{countyname,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -2,7 +2,9 @@ package lynu.chaohl.SpringbootIntegration.ServerBaseDemo.service;
 
 import lombok.extern.slf4j.Slf4j;
 import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity.ServerBaseDemo;
+import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity.County;
 import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.mapper.ServerBaseDemoMapper;
+import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.mapper.CountyMapper;
 import lynu.chaohl.SpringbootIntegration.utils.CustomException;
 import lynu.chaohl.SpringbootIntegration.utils.FileUtils;
 import lynu.chaohl.SpringbootIntegration.utils.IdWorkerUtils;
@@ -14,38 +16,22 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.File;
 import java.io.IOException;
 import java.util.Objects;
-import java.util.concurrent.TimeUnit;
 
 @Service
 @Slf4j
 public class ServerBaseDemoService {
 
-    //缓存
-//    public static final Cache<Long, Partner> cache;
-//
-//    static {
-//        cache = Caffeine.newBuilder()
-//                .expireAfterWrite(480, TimeUnit.MINUTES)
-//                .removalListener((Long key, Partner partner, RemovalCause cause) -> {
-//                    assert partner != null;
-//                    File file = new File(partner.getLogo());
-//                    if (file.exists()) {
-//                        file.delete();
-//                    }
-//                })
-//                .maximumSize(100)
-//                .build();
-//    }
     private final String sep = File.separator;
     @Value("${file.size.limit}")
     private String maxFileSize;
 
     @Autowired
     private ServerBaseDemoMapper serverBaseDemoMapper;
+
+
     public int insert(ServerBaseDemo serverBaseDemo){
 
        return serverBaseDemoMapper.insert(serverBaseDemo);
-
     }
 
     public Long uploadImage(MultipartFile file) throws IOException {

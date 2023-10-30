@@ -44,7 +44,7 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
         <!--生成Model类存放位置-->
-        <javaModelGenerator targetPackage="lynu.chaohl.SpringbootRedis.ServerBaseDemo.entity" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity" targetProject="src/main/java">
             <!--  for MyBatis3/MyBatis3Simple
     自动为每一个生成的类创建一个构造方法，构造方法包含了所有的field；而不是使用setter；
  -->
@@ -87,7 +87,7 @@
                 3，XMLMAPPER：会生成Mapper接口，接口完全依赖XML；
             注意，如果context是MyBatis3Simple：只支持ANNOTATEDMAPPER和XMLMAPPER
         -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="lynu.chaohl.SpringbootRedis.ServerBaseDemo.mapper" targetProject="src/main/java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="lynu.chaohl.SpringbootIntegration.ServerBaseDemo.mapper" targetProject="src/main/java">
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
         <!--生成对应表及类名-->
@@ -131,7 +131,7 @@
         -->
 
 
-        <table tableName="serverbasedemo" domainObjectName="ServerBaseDemo" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+        <table tableName="nation" domainObjectName="Nation" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
             <!--添加属性useActualColumnNames为true,那么生成的对象字段就跟表一样-->
             <!--<property name="useActualColumnNames" value="true"/>-->
 
