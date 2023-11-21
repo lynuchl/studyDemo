@@ -1,4 +1,4 @@
-//package lynu.chaohl.SpringbootBase.config.conflict;
+//package lynu.chaohl.SpringbootBaseTest.config.conflict;
 //
 //
 //import org.springframework.boot.actuate.autoconfigure.endpoint.web.CorsEndpointProperties;

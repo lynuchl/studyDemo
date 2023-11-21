@@ -1,0 +1,14 @@
+2023-01-09 16:10:47.593 INFO l.c.S.B.SpringbootBase - [logStarting,55] - Starting SpringbootBase using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 26364 (started by zz in E:\StudyDemo\Java_Demo\SpringbootBase)
+2023-01-09 16:10:47.603 INFO l.c.S.B.SpringbootBase - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2023-01-09 16:10:47.763 INFO l.c.S.B.SpringbootBase - [logStarted,61] - Started SpringbootBase in 0.521 seconds (JVM running for 1.779)
+2023-01-09 16:12:07.917 INFO l.c.S.B.SpringbootBase - [logStarting,55] - Starting SpringbootBase using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 19504 (started by zz in E:\StudyDemo\Java_Demo\SpringbootBase)
+2023-01-09 16:12:07.921 INFO l.c.S.B.SpringbootBase - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2023-01-09 16:12:08.110 INFO l.c.S.B.SpringbootBase - [logStarted,61] - Started SpringbootBase in 0.555 seconds (JVM running for 1.975)
+2023-01-09 16:12:08.479 INFO l.c.S.B.SpringbootBase - [indexTest,52] - hello world
+2023-01-09 16:12:55.303 INFO l.c.S.B.SpringbootBase - [logStarting,55] - Starting SpringbootBase using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 49620 (started by zz in E:\StudyDemo\Java_Demo\SpringbootBase)
+2023-01-09 16:12:55.307 INFO l.c.S.B.SpringbootBase - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2023-01-09 16:12:55.464 INFO l.c.S.B.SpringbootBase - [logStarted,61] - Started SpringbootBase in 0.524 seconds (JVM running for 1.961)
+2023-01-09 16:59:32.398 INFO l.c.S.B.SpringbootBase - [logStarting,55] - Starting SpringbootBase using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 46116 (started by zz in E:\StudyDemo\Java_Demo\SpringbootBase)
+2023-01-09 16:59:32.403 INFO l.c.S.B.SpringbootBase - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2023-01-09 17:02:07.678 INFO l.c.S.B.SpringbootBase - [logStarting,55] - Starting SpringbootBase using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 40676 (started by zz in E:\StudyDemo\Java_Demo\SpringbootBase)
+2023-01-09 17:02:07.805 INFO l.c.S.B.SpringbootBase - [logStartupProfileInfo,640] - The following 1 profile is active: "data"

@@ -1,0 +1,10 @@
+Demo点：resource目录下的配置文件的测试。
+1.在创建多yml文件时候，读取文件中的中文，会出现中文乱码的问题，原因暂时不明，解决方案是在创建文件时不要新建file文件，
+直接复制application.yml这样编码格式就会保持一致。
+
+2.日志配置、日志输出。
+    (1):springboot默认有logback日志输入，不要到做导包操作。我们可以使用自定义日志配置，见：resource/logback.xml配置文件。
+        日志的存放路径和系统模块的输出级别需要注意。
+    (2):spring的AOP日志配置，见lynu/chaohl/SpringbootBase/common/log
+
+3.mybatis全局配置文件加载见application-data.yml文件，实现sql执行语句日志打印。

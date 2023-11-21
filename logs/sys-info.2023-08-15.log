@@ -1,0 +1,220 @@
+2023-08-15 09:23:04.772 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 21536 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2023-08-15 09:23:04.779 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2023-08-15 09:23:07.668 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2023-08-15 09:23:07.669 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-08-15 09:23:07.669 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-08-15 09:23:07.919 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-08-15 09:23:09.329 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-08-15 09:23:09.687 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2023-08-15 09:23:09.711 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2023-08-15 09:23:09.779 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2023-08-15 09:23:09.861 INFO s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2023-08-15 09:23:10.247 INFO l.c.S.SpringbootBaseApplication - [logStarted,61] - Started SpringbootBaseApplication in 6.074 seconds (JVM running for 7.345)
+2023-08-15 09:24:41.454 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-15 09:29:44.513 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 21548 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2023-08-15 09:29:44.517 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2023-08-15 09:29:46.319 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2023-08-15 09:29:46.320 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-08-15 09:29:46.320 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-08-15 09:29:46.516 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-08-15 09:29:47.184 INFO o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+2023-08-15 09:30:18.107 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 21640 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2023-08-15 09:30:18.111 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2023-08-15 09:30:19.894 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2023-08-15 09:30:19.895 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-08-15 09:30:19.895 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-08-15 09:30:20.102 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-08-15 09:30:20.902 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-08-15 09:30:21.235 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2023-08-15 09:30:21.247 INFO o.a.c.h.Http11NioProtocol - [log,173] - Pausing ProtocolHandler ["http-nio-16000"]
+2023-08-15 09:30:21.248 INFO o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+2023-08-15 09:30:21.252 INFO o.a.c.h.Http11NioProtocol - [log,173] - Stopping ProtocolHandler ["http-nio-16000"]
+2023-08-15 09:30:21.253 INFO o.a.c.h.Http11NioProtocol - [log,173] - Destroying ProtocolHandler ["http-nio-16000"]
+2023-08-15 09:30:28.499 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 22788 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2023-08-15 09:30:28.506 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2023-08-15 09:30:30.306 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2023-08-15 09:30:30.307 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-08-15 09:30:30.307 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-08-15 09:30:30.499 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-08-15 09:30:31.281 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-08-15 09:30:31.607 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2023-08-15 09:30:31.651 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2023-08-15 09:30:31.691 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2023-08-15 09:30:31.729 INFO s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2023-08-15 09:30:31.953 INFO l.c.S.SpringbootBaseApplication - [logStarted,61] - Started SpringbootBaseApplication in 4.081 seconds (JVM running for 4.862)
+2023-08-15 09:30:58.082 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-15 10:55:54.038 INFO l.c.S.c.l.OperationLogAspect - [doBefore,61] - ================lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest Start ================
+2023-08-15 10:55:54.044 INFO l.c.S.c.l.OperationLogAspect - [doBefore,63] - URL            : http://192.168.1.232:16000/javaDemo/ServerBaseDemo/indexTest
+2023-08-15 10:55:54.044 INFO l.c.S.c.l.OperationLogAspect - [doBefore,65] - apiName        : 这是一个swagger的Demo测试
+2023-08-15 10:55:54.044 INFO l.c.S.c.l.OperationLogAspect - [doBefore,67] - HTTP Method    : POST
+2023-08-15 10:55:54.044 INFO l.c.S.c.l.OperationLogAspect - [doBefore,69] - Class Method   : lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest
+2023-08-15 10:55:54.083 INFO l.c.S.c.l.OperationLogAspect - [doBefore,71] - Request Args   : ["222"]
+2023-08-15 10:55:54.134 INFO c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+2023-08-15 10:55:54.596 INFO c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+2023-08-15 10:55:54.692 INFO l.c.S.S.c.ServerBaseDemoController - [indexTest,56] - 608
+2023-08-15 10:58:19.000 INFO l.c.S.c.l.OperationLogAspect - [doBefore,61] - ================lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest Start ================
+2023-08-15 10:58:19.001 INFO l.c.S.c.l.OperationLogAspect - [doBefore,63] - URL            : http://192.168.1.232:16000/javaDemo/ServerBaseDemo/indexTest
+2023-08-15 10:58:19.001 INFO l.c.S.c.l.OperationLogAspect - [doBefore,65] - apiName        : 这是一个swagger的Demo测试
+2023-08-15 10:58:19.001 INFO l.c.S.c.l.OperationLogAspect - [doBefore,67] - HTTP Method    : POST
+2023-08-15 10:58:19.002 INFO l.c.S.c.l.OperationLogAspect - [doBefore,69] - Class Method   : lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest
+2023-08-15 10:58:19.002 INFO l.c.S.c.l.OperationLogAspect - [doBefore,71] - Request Args   : ["22"]
+2023-08-15 10:58:19.006 INFO l.c.S.S.c.ServerBaseDemoController - [indexTest,56] - 4
+2023-08-15 11:16:24.381 INFO l.c.S.c.l.OperationLogAspect - [doBefore,61] - ================lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest Start ================
+2023-08-15 11:16:24.382 INFO l.c.S.c.l.OperationLogAspect - [doBefore,63] - URL            : http://localhost:5001/javaDemo/ServerBaseDemo/indexTest
+2023-08-15 11:16:24.382 INFO l.c.S.c.l.OperationLogAspect - [doBefore,65] - apiName        : 这是一个swagger的Demo测试
+2023-08-15 11:16:24.382 INFO l.c.S.c.l.OperationLogAspect - [doBefore,67] - HTTP Method    : POST
+2023-08-15 11:16:24.382 INFO l.c.S.c.l.OperationLogAspect - [doBefore,69] - Class Method   : lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest
+2023-08-15 11:16:24.383 INFO l.c.S.c.l.OperationLogAspect - [doBefore,71] - Request Args   : [null]
+2023-08-15 11:16:24.386 INFO l.c.S.S.c.ServerBaseDemoController - [indexTest,56] - 3
+2023-08-15 11:17:08.694 INFO l.c.S.c.l.OperationLogAspect - [doBefore,61] - ================lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest Start ================
+2023-08-15 11:17:08.694 INFO l.c.S.c.l.OperationLogAspect - [doBefore,63] - URL            : http://192.168.1.232:16000/javaDemo/ServerBaseDemo/indexTest
+2023-08-15 11:17:08.694 INFO l.c.S.c.l.OperationLogAspect - [doBefore,65] - apiName        : 这是一个swagger的Demo测试
+2023-08-15 11:17:08.694 INFO l.c.S.c.l.OperationLogAspect - [doBefore,67] - HTTP Method    : POST
+2023-08-15 11:17:08.694 INFO l.c.S.c.l.OperationLogAspect - [doBefore,69] - Class Method   : lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest
+2023-08-15 11:17:08.695 INFO l.c.S.c.l.OperationLogAspect - [doBefore,71] - Request Args   : ["222"]
+2023-08-15 11:17:08.697 INFO l.c.S.S.c.ServerBaseDemoController - [indexTest,56] - 2
+2023-08-15 11:29:30.059 INFO l.c.S.c.l.OperationLogAspect - [doBefore,61] - ================lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest Start ================
+2023-08-15 11:29:30.060 INFO l.c.S.c.l.OperationLogAspect - [doBefore,63] - URL            : http://localhost:5000/javaDemo/ServerBaseDemo/indexTest
+2023-08-15 11:29:30.060 INFO l.c.S.c.l.OperationLogAspect - [doBefore,65] - apiName        : 这是一个swagger的Demo测试
+2023-08-15 11:29:30.060 INFO l.c.S.c.l.OperationLogAspect - [doBefore,67] - HTTP Method    : POST
+2023-08-15 11:29:30.060 INFO l.c.S.c.l.OperationLogAspect - [doBefore,69] - Class Method   : lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest
+2023-08-15 11:29:30.061 INFO l.c.S.c.l.OperationLogAspect - [doBefore,71] - Request Args   : [null]
+2023-08-15 11:29:30.067 INFO l.c.S.S.c.ServerBaseDemoController - [indexTest,56] - 6
+2023-08-15 11:49:02.000 INFO l.c.S.c.l.OperationLogAspect - [doBefore,61] - ================lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest Start ================
+2023-08-15 11:49:02.000 INFO l.c.S.c.l.OperationLogAspect - [doBefore,63] - URL            : http://localhost:5001/javaDemo/ServerBaseDemo/indexTest
+2023-08-15 11:49:02.000 INFO l.c.S.c.l.OperationLogAspect - [doBefore,65] - apiName        : 这是一个swagger的Demo测试
+2023-08-15 11:49:02.001 INFO l.c.S.c.l.OperationLogAspect - [doBefore,67] - HTTP Method    : POST
+2023-08-15 11:49:02.001 INFO l.c.S.c.l.OperationLogAspect - [doBefore,69] - Class Method   : lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest
+2023-08-15 11:49:02.001 INFO l.c.S.c.l.OperationLogAspect - [doBefore,71] - Request Args   : [null]
+2023-08-15 11:49:02.004 INFO l.c.S.S.c.ServerBaseDemoController - [indexTest,56] - 3
+2023-08-15 15:58:21.802 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 4440 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2023-08-15 15:58:21.821 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2023-08-15 15:58:24.410 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2023-08-15 15:58:24.411 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-08-15 15:58:24.411 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-08-15 15:58:24.969 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-08-15 15:58:26.384 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-08-15 15:58:26.773 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2023-08-15 15:58:26.797 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2023-08-15 15:58:26.838 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2023-08-15 15:58:26.881 INFO s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2023-08-15 15:58:27.133 INFO l.c.S.SpringbootBaseApplication - [logStarted,61] - Started SpringbootBaseApplication in 6.017 seconds (JVM running for 9.917)
+2023-08-15 15:59:48.413 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-15 16:00:36.531 INFO l.c.S.c.l.OperationLogAspect - [doBefore,61] - ================lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest Start ================
+2023-08-15 16:00:36.533 INFO l.c.S.c.l.OperationLogAspect - [doBefore,63] - URL            : http://localhost:5001/javaDemo/ServerBaseDemo/indexTest
+2023-08-15 16:00:36.534 INFO l.c.S.c.l.OperationLogAspect - [doBefore,65] - apiName        : 这是一个swagger的Demo测试
+2023-08-15 16:00:36.535 INFO l.c.S.c.l.OperationLogAspect - [doBefore,67] - HTTP Method    : POST
+2023-08-15 16:00:36.536 INFO l.c.S.c.l.OperationLogAspect - [doBefore,69] - Class Method   : lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest
+2023-08-15 16:00:36.547 INFO l.c.S.c.l.OperationLogAspect - [doBefore,71] - Request Args   : [null]
+2023-08-15 16:00:36.593 INFO c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+2023-08-15 16:00:36.974 INFO c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+2023-08-15 16:00:37.038 INFO l.c.S.S.c.ServerBaseDemoController - [indexTest,56] - 483
+2023-08-15 16:46:26.152 INFO l.c.S.c.l.OperationLogAspect - [doBefore,61] - ================lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest Start ================
+2023-08-15 16:46:26.152 INFO l.c.S.c.l.OperationLogAspect - [doBefore,63] - URL            : http://192.168.1.232:16000/javaDemo/ServerBaseDemo/indexTest
+2023-08-15 16:46:26.152 INFO l.c.S.c.l.OperationLogAspect - [doBefore,65] - apiName        : 这是一个swagger的Demo测试
+2023-08-15 16:46:26.153 INFO l.c.S.c.l.OperationLogAspect - [doBefore,67] - HTTP Method    : POST
+2023-08-15 16:46:26.153 INFO l.c.S.c.l.OperationLogAspect - [doBefore,69] - Class Method   : lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest
+2023-08-15 16:46:26.153 INFO l.c.S.c.l.OperationLogAspect - [doBefore,71] - Request Args   : ["2"]
+2023-08-15 16:46:26.161 INFO l.c.S.S.c.ServerBaseDemoController - [indexTest,56] - 8
+2023-08-15 16:46:53.826 INFO l.c.S.c.l.OperationLogAspect - [doBefore,61] - ================lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest Start ================
+2023-08-15 16:46:53.827 INFO l.c.S.c.l.OperationLogAspect - [doBefore,63] - URL            : http://192.168.1.232:16000/javaDemo/ServerBaseDemo/indexTest
+2023-08-15 16:46:53.827 INFO l.c.S.c.l.OperationLogAspect - [doBefore,65] - apiName        : 这是一个swagger的Demo测试
+2023-08-15 16:46:53.827 INFO l.c.S.c.l.OperationLogAspect - [doBefore,67] - HTTP Method    : POST
+2023-08-15 16:46:53.827 INFO l.c.S.c.l.OperationLogAspect - [doBefore,69] - Class Method   : lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest
+2023-08-15 16:46:53.827 INFO l.c.S.c.l.OperationLogAspect - [doBefore,71] - Request Args   : ["2"]
+2023-08-15 16:46:53.831 INFO l.c.S.S.c.ServerBaseDemoController - [indexTest,56] - 3
+2023-08-15 16:47:06.825 INFO l.c.S.c.l.OperationLogAspect - [doBefore,61] - ================lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest Start ================
+2023-08-15 16:47:06.825 INFO l.c.S.c.l.OperationLogAspect - [doBefore,63] - URL            : http://192.168.1.232:16000/javaDemo/ServerBaseDemo/indexTest
+2023-08-15 16:47:06.825 INFO l.c.S.c.l.OperationLogAspect - [doBefore,65] - apiName        : 这是一个swagger的Demo测试
+2023-08-15 16:47:06.825 INFO l.c.S.c.l.OperationLogAspect - [doBefore,67] - HTTP Method    : POST
+2023-08-15 16:47:06.826 INFO l.c.S.c.l.OperationLogAspect - [doBefore,69] - Class Method   : lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest
+2023-08-15 16:47:06.826 INFO l.c.S.c.l.OperationLogAspect - [doBefore,71] - Request Args   : ["2"]
+2023-08-15 16:47:06.828 INFO l.c.S.S.c.ServerBaseDemoController - [indexTest,56] - 2
+2023-08-15 16:48:09.441 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 1808 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2023-08-15 16:48:09.445 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2023-08-15 16:48:11.235 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2023-08-15 16:48:11.235 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-08-15 16:48:11.235 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-08-15 16:48:11.429 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-08-15 16:48:12.211 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-08-15 16:48:12.537 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2023-08-15 16:48:12.562 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2023-08-15 16:48:12.591 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2023-08-15 16:48:12.635 INFO s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2023-08-15 16:48:12.837 INFO l.c.S.SpringbootBaseApplication - [logStarted,61] - Started SpringbootBaseApplication in 3.972 seconds (JVM running for 4.718)
+2023-08-15 16:48:18.489 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-15 16:48:18.541 INFO l.c.S.c.l.OperationLogAspect - [doBefore,61] - ================lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest Start ================
+2023-08-15 16:48:18.542 INFO l.c.S.c.l.OperationLogAspect - [doBefore,63] - URL            : http://192.168.1.232:16000/javaDemo/ServerBaseDemo/indexTest
+2023-08-15 16:48:18.542 INFO l.c.S.c.l.OperationLogAspect - [doBefore,65] - apiName        : 这是一个swagger的Demo测试
+2023-08-15 16:48:18.543 INFO l.c.S.c.l.OperationLogAspect - [doBefore,67] - HTTP Method    : POST
+2023-08-15 16:48:18.543 INFO l.c.S.c.l.OperationLogAspect - [doBefore,69] - Class Method   : lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest
+2023-08-15 16:48:18.563 INFO l.c.S.c.l.OperationLogAspect - [doBefore,71] - Request Args   : ["2"]
+2023-08-15 16:48:18.602 INFO c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+2023-08-15 16:48:19.001 INFO c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+2023-08-15 16:48:19.054 INFO l.c.S.S.c.ServerBaseDemoController - [indexTest,56] - 483推送成功！！！
+2023-08-15 16:51:09.091 INFO l.c.S.c.l.OperationLogAspect - [doBefore,61] - ================lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest Start ================
+2023-08-15 16:51:09.091 INFO l.c.S.c.l.OperationLogAspect - [doBefore,63] - URL            : http://localhost:5000/javaDemo/ServerBaseDemo/indexTest
+2023-08-15 16:51:09.091 INFO l.c.S.c.l.OperationLogAspect - [doBefore,65] - apiName        : 这是一个swagger的Demo测试
+2023-08-15 16:51:09.092 INFO l.c.S.c.l.OperationLogAspect - [doBefore,67] - HTTP Method    : POST
+2023-08-15 16:51:09.092 INFO l.c.S.c.l.OperationLogAspect - [doBefore,69] - Class Method   : lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest
+2023-08-15 16:51:09.092 INFO l.c.S.c.l.OperationLogAspect - [doBefore,71] - Request Args   : [null]
+2023-08-15 16:51:09.097 INFO l.c.S.S.c.ServerBaseDemoController - [indexTest,56] - 5推送成功！！！
+2023-08-15 16:52:48.543 INFO l.c.S.c.l.OperationLogAspect - [doBefore,61] - ================lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest Start ================
+2023-08-15 16:52:48.543 INFO l.c.S.c.l.OperationLogAspect - [doBefore,63] - URL            : http://localhost:5000/javaDemo/ServerBaseDemo/indexTest
+2023-08-15 16:52:48.543 INFO l.c.S.c.l.OperationLogAspect - [doBefore,65] - apiName        : 这是一个swagger的Demo测试
+2023-08-15 16:52:48.543 INFO l.c.S.c.l.OperationLogAspect - [doBefore,67] - HTTP Method    : POST
+2023-08-15 16:52:48.544 INFO l.c.S.c.l.OperationLogAspect - [doBefore,69] - Class Method   : lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest
+2023-08-15 16:52:48.544 INFO l.c.S.c.l.OperationLogAspect - [doBefore,71] - Request Args   : [null]
+2023-08-15 16:52:48.548 INFO l.c.S.S.c.ServerBaseDemoController - [indexTest,56] - 4推送成功！！！
+2023-08-15 16:53:10.668 INFO l.c.S.c.l.OperationLogAspect - [doBefore,61] - ================lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest Start ================
+2023-08-15 16:53:10.668 INFO l.c.S.c.l.OperationLogAspect - [doBefore,63] - URL            : http://localhost:5001/javaDemo/ServerBaseDemo/indexTest
+2023-08-15 16:53:10.668 INFO l.c.S.c.l.OperationLogAspect - [doBefore,65] - apiName        : 这是一个swagger的Demo测试
+2023-08-15 16:53:10.668 INFO l.c.S.c.l.OperationLogAspect - [doBefore,67] - HTTP Method    : POST
+2023-08-15 16:53:10.668 INFO l.c.S.c.l.OperationLogAspect - [doBefore,69] - Class Method   : lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest
+2023-08-15 16:53:10.669 INFO l.c.S.c.l.OperationLogAspect - [doBefore,71] - Request Args   : [null]
+2023-08-15 16:53:10.671 INFO l.c.S.S.c.ServerBaseDemoController - [indexTest,56] - 2推送成功！！！
+2023-08-15 16:54:48.581 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 14444 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2023-08-15 16:54:48.585 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2023-08-15 16:54:50.432 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2023-08-15 16:54:50.433 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-08-15 16:54:50.434 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-08-15 16:54:50.643 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-08-15 16:54:51.378 INFO o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+2023-08-15 16:55:19.722 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 17220 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2023-08-15 16:55:19.726 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2023-08-15 16:55:21.718 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2023-08-15 16:55:21.719 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-08-15 16:55:21.720 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-08-15 16:55:21.948 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-08-15 16:55:22.722 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-08-15 16:55:23.049 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2023-08-15 16:55:23.069 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2023-08-15 16:55:23.099 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2023-08-15 16:55:23.139 INFO s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2023-08-15 16:55:23.334 INFO l.c.S.SpringbootBaseApplication - [logStarted,61] - Started SpringbootBaseApplication in 4.1 seconds (JVM running for 4.853)
+2023-08-15 16:55:33.524 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-15 16:55:33.572 INFO l.c.S.c.l.OperationLogAspect - [doBefore,61] - ================lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest Start ================
+2023-08-15 16:55:33.573 INFO l.c.S.c.l.OperationLogAspect - [doBefore,63] - URL            : http://localhost:5000/javaDemo/ServerBaseDemo/indexTest
+2023-08-15 16:55:33.574 INFO l.c.S.c.l.OperationLogAspect - [doBefore,65] - apiName        : 这是一个swagger的Demo测试
+2023-08-15 16:55:33.575 INFO l.c.S.c.l.OperationLogAspect - [doBefore,67] - HTTP Method    : POST
+2023-08-15 16:55:33.575 INFO l.c.S.c.l.OperationLogAspect - [doBefore,69] - Class Method   : lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest
+2023-08-15 16:55:33.595 INFO l.c.S.c.l.OperationLogAspect - [doBefore,71] - Request Args   : [null]
+2023-08-15 16:55:33.628 INFO c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+2023-08-15 16:55:33.987 INFO c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+2023-08-15 16:55:34.043 INFO l.c.S.S.c.ServerBaseDemoController - [indexTest,56] - 442推送成功！！！
+2023-08-15 16:56:14.888 INFO l.c.S.c.l.OperationLogAspect - [doBefore,61] - ================lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest Start ================
+2023-08-15 16:56:14.888 INFO l.c.S.c.l.OperationLogAspect - [doBefore,63] - URL            : http://localhost:5000/javaDemo/ServerBaseDemo/indexTest
+2023-08-15 16:56:14.888 INFO l.c.S.c.l.OperationLogAspect - [doBefore,65] - apiName        : 这是一个swagger的Demo测试
+2023-08-15 16:56:14.889 INFO l.c.S.c.l.OperationLogAspect - [doBefore,67] - HTTP Method    : POST
+2023-08-15 16:56:14.889 INFO l.c.S.c.l.OperationLogAspect - [doBefore,69] - Class Method   : lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest
+2023-08-15 16:56:14.889 INFO l.c.S.c.l.OperationLogAspect - [doBefore,71] - Request Args   : [null]
+2023-08-15 16:56:14.893 INFO l.c.S.S.c.ServerBaseDemoController - [indexTest,56] - 4推送成功！！！
+2023-08-15 16:56:14.906 INFO l.c.S.S.c.ServerBaseDemoController - [indexTest2,80] - 2第二次推送成功！！！
+2023-08-15 16:56:23.354 INFO l.c.S.c.l.OperationLogAspect - [doBefore,61] - ================lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest Start ================
+2023-08-15 16:56:23.354 INFO l.c.S.c.l.OperationLogAspect - [doBefore,63] - URL            : http://localhost:5001/javaDemo/ServerBaseDemo/indexTest
+2023-08-15 16:56:23.354 INFO l.c.S.c.l.OperationLogAspect - [doBefore,65] - apiName        : 这是一个swagger的Demo测试
+2023-08-15 16:56:23.355 INFO l.c.S.c.l.OperationLogAspect - [doBefore,67] - HTTP Method    : POST
+2023-08-15 16:56:23.355 INFO l.c.S.c.l.OperationLogAspect - [doBefore,69] - Class Method   : lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.controller.ServerBaseDemoController.indexTest
+2023-08-15 16:56:23.355 INFO l.c.S.c.l.OperationLogAspect - [doBefore,71] - Request Args   : [null]
+2023-08-15 16:56:23.357 INFO l.c.S.S.c.ServerBaseDemoController - [indexTest,56] - 2推送成功！！！
+2023-08-15 16:56:23.367 INFO l.c.S.S.c.ServerBaseDemoController - [indexTest2,80] - 1第二次推送成功！！！

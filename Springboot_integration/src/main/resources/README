@@ -7,3 +7,5 @@
     (3):配置文件ymal中的management元素
     (4):使用浏览器访问 http://localhost:16002/javaDemo/actrator查看开放的接口列表
     (5):详细使用参见博客：https://www.cnblogs.com/caoweixiong/p/15325382.html
+
+3.本项目的主从库的配置还需要优化，如：在此主从配置的前提下，mybatis的配置是否会受到影响。

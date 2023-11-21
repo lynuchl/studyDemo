@@ -13,6 +13,7 @@
         <module name="Springboot_integration" />
         <module name="Springboot_Redis" />
         <module name="SpringbootBase" />
+        <module name="SpringbootBase_test" />
         <module name="SpringbootRedis" />
       </profile>
     </annotationProcessing>
@@ -22,9 +23,12 @@
       <module name="Java_Demo" target="1.8" />
       <module name="springboot-dubbo-client" target="1.8" />
       <module name="springboot-dubbo-server" target="1.8" />
+      <module name="Springboot_HApiTest" target="1.8" />
       <module name="Springboot_integration" target="1.8" />
+      <module name="springboot_mybatis" target="8" />
       <module name="Springboot_Redis" target="1.8" />
       <module name="SpringbootBase" target="1.8" />
+      <module name="SpringbootBase_test" target="1.8" />
       <module name="SpringbootRedis" target="1.8" />
     </bytecodeTargetLevel>
   </component>

@@ -43,7 +43,7 @@ org.springframework.context.ApplicationContextException: Failed to start bean 'd
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
-	at lynu.chaohl.SpringbootBase.SpringbootBaseApplication.main(SpringbootBaseApplication.java:14)
+	at lynu.chaohl.SpringbootBaseTest.SpringbootBaseApplication.main(SpringbootBaseApplication.java:14)
 Caused by: java.lang.NullPointerException: null
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
@@ -143,7 +143,7 @@ org.springframework.context.ApplicationContextException: Failed to start bean 'd
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
-	at lynu.chaohl.SpringbootBase.SpringbootBaseApplication.main(SpringbootBaseApplication.java:14)
+	at lynu.chaohl.SpringbootBaseTest.SpringbootBaseApplication.main(SpringbootBaseApplication.java:14)
 Caused by: java.lang.NullPointerException: null
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
@@ -214,7 +214,7 @@ org.springframework.context.ApplicationContextException: Failed to start bean 'd
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
-	at lynu.chaohl.SpringbootBase.SpringbootBaseApplication.main(SpringbootBaseApplication.java:14)
+	at lynu.chaohl.SpringbootBaseTest.SpringbootBaseApplication.main(SpringbootBaseApplication.java:14)
 Caused by: java.lang.NullPointerException: null
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
@@ -427,7 +427,7 @@ unexpected character found
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
-	at lynu.chaohl.SpringbootBase.SpringbootBaseApplication.main(SpringbootBaseApplication.java:14)
+	at lynu.chaohl.SpringbootBaseTest.SpringbootBaseApplication.main(SpringbootBaseApplication.java:14)
 2022-11-23 23:50:26.007 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 44140 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
 2022-11-23 23:50:26.009 DEBUG l.c.S.SpringbootBaseApplication - [logStarting,56] - Running with Spring Boot v2.7.0, Spring v5.3.20
 2022-11-23 23:50:26.010 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"

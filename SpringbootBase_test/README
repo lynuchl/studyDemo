@@ -1,0 +1,14 @@
+项目功能列表: 针对springboot项目
+1.WEB项目启动
+2.Hello测试接口
+3.测试类
+4.项目导入本地jar包
+5.文件配置读取 : application文件、
+  属性注入测试 : @Value注解、
+  log日志输出 : 采用Lombok提供的logback日志，使用@SL4J注解
+6.常用的接口请求 : HelloController
+7.swagger的使用 : springfox-swagger-ui;springfox-swagger2导包
+8.lombok的使用 : 需要安装lombok; lombok导包
+9.后端返回前端的标准数据格式 : ResponseEntity
+10.后端验证传入的数据 : validation-api导包
+

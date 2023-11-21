@@ -1,0 +1,2 @@
+2023-02-01 10:29:45.794 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 26460 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2023-02-01 10:29:45.802 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"

@@ -6,7 +6,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field serverBaseDemoService in lynu.chaohl.SpringbootRedis.BaseTests.SpringbootBase required a bean of type 'lynu.chaohl.SpringbootBase.ServerBaseDemo.service.ServerBaseDemoService' that could not be found.
+Field serverBaseDemoService in lynu.chaohl.SpringbootRedis.BaseTests.SpringbootBase required a bean of type 'lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.service.ServerBaseDemoService' that could not be found.
 
 The injection point has the following annotations:
 	- @org.springframework.beans.factory.annotation.Autowired(required=true)
@@ -14,7 +14,7 @@ The injection point has the following annotations:
 
 Action:
 
-Consider defining a bean of type 'lynu.chaohl.SpringbootBase.ServerBaseDemo.service.ServerBaseDemoService' in your configuration.
+Consider defining a bean of type 'lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.service.ServerBaseDemoService' in your configuration.
 
 2023-01-09 16:59:32.878 ERROR o.s.t.c.TestContextManager - [prepareTestInstance,252] - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@285d851a] to prepare test instance [lynu.chaohl.SpringbootRedis.BaseTests.SpringbootBase@314b8f2d]
 java.lang.IllegalStateException: Failed to load ApplicationContext
@@ -88,7 +88,7 @@ java.lang.IllegalStateException: Failed to load ApplicationContext
 	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
 	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
 	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springbootBase': Unsatisfied dependency expressed through field 'serverBaseDemoService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'lynu.chaohl.SpringbootBase.ServerBaseDemo.service.ServerBaseDemoService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springbootBase': Unsatisfied dependency expressed through field 'serverBaseDemoService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.service.ServerBaseDemoService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
 	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
@@ -110,7 +110,7 @@ Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Err
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
 	... 69 common frames omitted
-Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'lynu.chaohl.SpringbootBase.ServerBaseDemo.service.ServerBaseDemoService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.service.ServerBaseDemoService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1799)
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1355)
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
@@ -124,7 +124,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field serverBaseDemoService in lynu.chaohl.SpringbootRedis.BaseTests.SpringbootBase required a bean of type 'lynu.chaohl.SpringbootBase.ServerBaseDemo.service.ServerBaseDemoService' that could not be found.
+Field serverBaseDemoService in lynu.chaohl.SpringbootRedis.BaseTests.SpringbootBase required a bean of type 'lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.service.ServerBaseDemoService' that could not be found.
 
 The injection point has the following annotations:
 	- @org.springframework.beans.factory.annotation.Autowired(required=true)
@@ -132,7 +132,7 @@ The injection point has the following annotations:
 
 Action:
 
-Consider defining a bean of type 'lynu.chaohl.SpringbootBase.ServerBaseDemo.service.ServerBaseDemoService' in your configuration.
+Consider defining a bean of type 'lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.service.ServerBaseDemoService' in your configuration.
 
 2023-01-09 17:02:08.043 ERROR o.s.t.c.TestContextManager - [prepareTestInstance,252] - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@71c5b236] to prepare test instance [lynu.chaohl.SpringbootRedis.BaseTests.SpringbootBase@2cab9998]
 java.lang.IllegalStateException: Failed to load ApplicationContext
@@ -206,7 +206,7 @@ java.lang.IllegalStateException: Failed to load ApplicationContext
 	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
 	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
 	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springbootBase': Unsatisfied dependency expressed through field 'serverBaseDemoService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'lynu.chaohl.SpringbootBase.ServerBaseDemo.service.ServerBaseDemoService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springbootBase': Unsatisfied dependency expressed through field 'serverBaseDemoService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.service.ServerBaseDemoService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
 	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
@@ -228,7 +228,7 @@ Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Err
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
 	... 69 common frames omitted
-Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'lynu.chaohl.SpringbootBase.ServerBaseDemo.service.ServerBaseDemoService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'lynu.chaohl.SpringbootBaseTest.ServerBaseDemo.service.ServerBaseDemoService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1799)
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1355)
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)

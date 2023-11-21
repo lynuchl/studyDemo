@@ -1,0 +1,12 @@
+2023-08-16 15:18:35.504 INFO l.c.S.SpringbootBaseApplication - [logStarting,55] - Starting SpringbootBaseApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 24316 (E:\StudyDemo\Java_Demo\SpringbootBase\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2023-08-16 15:18:35.512 INFO l.c.S.SpringbootBaseApplication - [logStartupProfileInfo,640] - The following 1 profile is active: "data"
+2023-08-16 15:18:38.394 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2023-08-16 15:18:38.394 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-08-16 15:18:38.394 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-08-16 15:18:38.646 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-08-16 15:18:39.761 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-08-16 15:18:40.228 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2023-08-16 15:18:40.262 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2023-08-16 15:18:40.296 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2023-08-16 15:18:40.338 INFO s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2023-08-16 15:18:40.563 INFO l.c.S.SpringbootBaseApplication - [logStarted,61] - Started SpringbootBaseApplication in 5.699 seconds (JVM running for 6.497)
