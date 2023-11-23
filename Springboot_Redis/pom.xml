@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>lynu</groupId>
-        <artifactId>chaohl_parent</artifactId>
+        <groupId>lynu.chaohl</groupId>
+        <artifactId>java_demo_parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <!--<groupId>org.springframework.boot</groupId>-->
         <!--<artifactId>spring-boot-starter-parent</artifactId>-->
@@ -12,8 +12,8 @@
         <!--<relativePath/>-->
     </parent>
     <packaging>jar</packaging>
-    <groupId>lynu</groupId>
-    <artifactId>chaohl</artifactId>
+    <groupId>lynu.chaohl</groupId>
+    <artifactId>java_demo_SpringbootRedis</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>SpringbootRedis</name>
     <description>Demo project for Spring Boot</description>

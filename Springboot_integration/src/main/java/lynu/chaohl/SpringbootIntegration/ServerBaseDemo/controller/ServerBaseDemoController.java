@@ -31,21 +31,10 @@ public class ServerBaseDemoController {
         if (serverBaseDemoService.insert(sbd)!=0)
         log.info("hello world");
 
+//
+
         return BaseResult.success("hello world");
     }
-
-//    @OperationLog(apiName = "mybatis测试")
-//    @ApiOperation("mybatis测试")
-//    @PostMapping("/insertCity")
-//    public BaseResult<String> insertCity(@RequestBody County record){
-//
-//        if (serverBaseDemoService.insertCounty(record)==0)
-//            return BaseResult.fail("插入失败");
-//
-//
-//        return BaseResult.success("插入成功");
-//    }
-
 
     @ApiOperation("文件上传")
     @PostMapping("/uploadFile")

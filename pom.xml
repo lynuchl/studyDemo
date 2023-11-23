@@ -13,8 +13,8 @@
         <version>2.7.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>lynu</groupId>
-    <artifactId>chaohl_parent</artifactId>
+    <groupId>lynu.chaohl</groupId>
+    <artifactId>java_demo_parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Java_Demo</name>
     <description>Demo project for Spring Boot</description>
