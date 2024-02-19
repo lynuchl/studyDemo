@@ -34,7 +34,7 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>lynu</groupId>
+            <groupId>lynu.chaohl</groupId>
             <artifactId>CHLCommonUtils</artifactId>
             <version>1.0</version>
         </dependency>
