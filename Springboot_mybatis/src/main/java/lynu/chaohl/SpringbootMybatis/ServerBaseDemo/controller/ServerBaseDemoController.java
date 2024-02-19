@@ -82,8 +82,6 @@ public class ServerBaseDemoController {
         return BaseResult.success("hello world");
     }
 
-
-
     @OperationLog(apiName = "这是一个swagger的Demo测试")
     @ApiOperation("这是三个swagger的Demo测试")
     @PostMapping("/indexTest3")
