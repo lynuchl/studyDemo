@@ -11,4 +11,5 @@
 8.lombok的使用 : 需要安装lombok; lombok导包
 9.后端返回前端的标准数据格式 : ResponseEntity
 10.后端验证传入的数据 : validation-api导包
+11.项目转移测试
 
