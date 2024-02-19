@@ -1,0 +1,17 @@
+2023-11-22 10:50:15.937 INFO l.c.S.SpringbootMybatisApplication - [logStarting,55] - Starting SpringbootMybatisApplication using Java 1.8.0_91 on LAPTOP-4NJ4OJED with PID 10088 (E:\StudyDemo\Java_Demo\Springboot_mybatis\target\classes started by zz in E:\StudyDemo\Java_Demo)
+2023-11-22 10:50:15.944 INFO l.c.S.SpringbootMybatisApplication - [logStartupProfileInfo,664] - The following profiles are active: multidata
+2023-11-22 10:50:18.361 INFO o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-16000"]
+2023-11-22 10:50:18.362 INFO o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-11-22 10:50:18.362 INFO o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-11-22 10:50:18.517 INFO o.a.c.c.C.[.[.[/javaDemo] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-11-22 10:50:18.870 INFO c.a.d.p.DruidDataSource - [init,996] - {dataSource-1,His} inited
+2023-11-22 10:50:18.872 INFO c.a.d.p.DruidDataSource - [init,996] - {dataSource-2,Cis} inited
+2023-11-22 10:50:18.872 INFO c.b.d.d.DynamicRoutingDataSource - [addDataSource,154] - dynamic-datasource - add a datasource named [His] success
+2023-11-22 10:50:18.873 INFO c.b.d.d.DynamicRoutingDataSource - [addDataSource,154] - dynamic-datasource - add a datasource named [Cis] success
+2023-11-22 10:50:18.874 INFO c.b.d.d.DynamicRoutingDataSource - [afterPropertiesSet,234] - dynamic-datasource initial loaded [2] datasource,primary datasource named [His]
+2023-11-22 10:50:19.656 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-11-22 10:50:19.985 INFO o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-16000"]
+2023-11-22 10:50:20.004 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+2023-11-22 10:50:20.036 INFO s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+2023-11-22 10:50:20.068 INFO s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2023-11-22 10:50:20.270 INFO l.c.S.SpringbootMybatisApplication - [logStarted,61] - Started SpringbootMybatisApplication in 4.894 seconds (JVM running for 10.332)

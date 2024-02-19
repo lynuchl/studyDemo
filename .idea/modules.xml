@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ChlCommonUtils/CHLCommonUtils.iml" filepath="$PROJECT_DIR$/ChlCommonUtils/CHLCommonUtils.iml" />
       <module fileurl="file://$PROJECT_DIR$/Demo_2/Demo_2.iml" filepath="$PROJECT_DIR$/Demo_2/Demo_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java_Demo.iml" filepath="$PROJECT_DIR$/Java_Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringbootBase/SpringbootBase.iml" filepath="$PROJECT_DIR$/SpringbootBase/SpringbootBase.iml" />

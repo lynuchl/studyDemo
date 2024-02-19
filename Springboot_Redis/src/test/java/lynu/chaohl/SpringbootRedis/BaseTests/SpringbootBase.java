@@ -1,7 +1,8 @@
 package lynu.chaohl.SpringbootRedis.BaseTests;
 
 import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 

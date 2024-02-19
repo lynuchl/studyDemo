@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="CHLCommonUtils" />
         <module name="Demo_2" />
         <module name="springboot-dubbo-client" />
         <module name="springboot-dubbo-server" />
@@ -19,6 +20,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ChlCommonUtils" target="1.5" />
+      <module name="CHLCommonUtils" target="1.8" />
       <module name="Demo_2" target="1.8" />
       <module name="Java_Demo" target="1.8" />
       <module name="springboot-dubbo-client" target="1.8" />
