@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 0. addEventListener()方法为指定元素添加指定事件处理程序,添加附加事件处理程序不会覆盖已有的事件处理程序,可以添加多个事件处理程序
+    element.addEventListener(event,function,useCapture),其中useCapture的默认值为false,使用冒泡传播(从内到外一次执行多个事件处理程序);
+    否则,使用捕获传播(从外到内) -->
+
+    <!-- 1.html文档中的所有事物都是节点,其中元素节点和文本节点 -->
+    <!-- 可以使用以下节点进行节点导航:parentNode;childNodes[nodenumber];firstChild;lastChild;nextSibling;previousSibling; -->
+
+    <!-- 2.可以使用document.body访问完整的body文档;document.documentElement访问完整的html文档
+    nodeName属性规定节点的名称:nodeName是只读的,元素节点的nodeName等同于标签名;属性节点是属性名称;文本节点是#text;文档节点是#document;
+    nodeValue属性规定的是节点的值:元素节点是undefined;文本节点是文本;属性节点是属性; -->
+
+    <!-- 3.向html DOM添加新元素,必须追加到已有的节点元素 -->
+
+    <!-- 4.HTMLCollection对象,getElementByTagName()方法返回HTMLCollection对象;它是类数组的HTML元素列表(集合)。不是一个数组，但是可以通过数组遍历
+    的方式进行遍历元素 -->
+
+    <!-- 5.window对象，它代表浏览器窗口。所有的全局js对象，函数会自动成为window对象的成员。可以使用innerHeight;innerWidth;返回浏览器窗口的尺寸。
+    window.screen对象的属性可以返回访问者屏幕的尺寸。 -->
+
+    <!-- 6.window.location对象可以获取当前页面地址(URL)并把浏览器重定向到新页面
+    window.location.href返回当前页面的href;
+    window.location.hostname返回web主机的域名;
+    window.location.pathname返回页面的路径或者文件名; -->
+
+    <input type="button" value="重定向" onclick="ref()">
+       <!-- 7. window.history对象包含浏览器历史;
+        history.back()回退 -->
+
+        <!-- 8.js有三种类型的弹出框:警告框,确认框,提示框
+        window.alert("sometext"):确保信息传递给用户,通常使用警告框
+        window.confirm("sometext"):确认该返回true
+        window.prompt("sometext","defaultText") -->
+
+        <!-- 9.js可以在时间间隔内执行;这就是定时事件;
+        window.setTimeout(function,milliseconds);过一段时间执行
+        window.setInterval(function,milliseconds);过一段时间循环执行
+        使用clearTimeout方法停止执行setTimeout()中规定的函数 -->
+
+        <!-- 10.Cookie是计算机上存储在小的文本文件中的数据。
+        js可以通过document.cookie属性创建,读取和删除cookie -->
+
+    <p id="screenTest"></p>
+    <div id="test1">
+        <p id="p1">这是一个段落。</p>
+        <p id="p2">这是另一个段落</p>
+    </div>
+</body>
+<script>
+
+function ref(){
+   window.location="fourth.html";
+}
+
+document.getElementById("screenTest").innerText="屏幕的宽度和高度为:"+window.screen.width+","+window.screen.height;
+var newElement=document.createElement("p3");
+var newChild=document.createTextNode("这是新添加的一个段落");
+newElement.appendChild(newChild);
+
+document.getElementById("test1").appendChild(newElement);
+
+
+</script>
+</html>

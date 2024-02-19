@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../ref/vue.js"></script>
+</head>
+<body>
+    <!-- 0.v-once表示一次插值，值不会随着更新而改变 -->
+    <div>
+        <span v-once>this value will not be change</span>
+    </div>
+
+    <!-- 1.v-html指令表示输出真正的html -->
+    <div id='app-1'>
+        <p>using mustaches:{{rawHtml}}</p>
+        <p>using v-html directive:<span v-html='rawHtml'></span></p>
+    </div>
+
+    <!-- 2.属性绑定 -->
+    <!-- 这种绑定和去除v-bind:的区别是？ -->
+    <div id='app-2'>
+        <p>{{message}}</p>
+        <button v-on:[clicktest]='onclick'>点击属性绑定</button>
+    </div>
+
+    <!-- 3.javascript表达式绑定，每个绑定都只能包含单个单个表达式 -->
+
+    <!-- 4.修饰符是以半角句号.指明的特殊后缀,用于指出一个指令应该以特殊方式绑定 -->
+
+    <!-- 5.v-bind:可以简写为:;  v-on: 可以简写为@ -->
+    
+    <!-- 6.计算属性：对于模板内的复杂逻辑，都应当使用计算属性 -->
+    <!-- 在这里的计算属性reversedMessage,我们提供的函数将用作property的vm.reversedMessage的getter函数。 -->
+    <!-- 计算属性是基于他们的响应式依赖进行缓存的，只有相应式依赖发生改变时它们才重新计算求值， -->
+    <!-- 计算属性默认的只有getter,但是可以自定义setter -->
+    <div id='app-3'>
+        <p>original message:"{{message}}"</p>
+        <p>computed reversed message:"{{reversedMessage}}"</p>
+    </div>
+
+    <!-- 7.计算属性和侦听器 -->
+    <!-- 侦听器:当需要在数据变化时执行异步或者开销较大时这个方式最有用 -->
+<script>
+    new Vue({
+        el:'#app-3',
+        data:{
+            message:'hello'
+        },
+        computed:{
+            reversedMessage:function(){
+                return this.message.split('').reverse().join('')
+            }
+        }
+    })
+
+    new Vue({
+        el:'#app-1',
+        data:{
+            rawHtml:"<span style='color:red'>this shoule be red</span>",
+           
+        }
+    })
+    new Vue({
+        el:'#app-2',
+        data:{
+            message:'hello',
+            clicktest:'click'
+        },
+        methods:{
+            onclick:function(){
+                this.message=this.message+'world'
+            }
+        }
+    })
+</script>
+</html>

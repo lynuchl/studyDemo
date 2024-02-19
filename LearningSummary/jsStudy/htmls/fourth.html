@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> -->
+</head>
+<body>
+
+    <!-- 0. form验证 -->
+<form name="myForm" action="#" onsubmit=" validateForm()" method="post">
+  姓名：<input type="text" name="fname">
+  <input type="submit" value="提交">
+</form>
+
+        <!-- 1.所有的js值，除了布尔,数字,字符串(也可以转换成对象，但是优先选取基础值,)都是对象。 -->
+
+        <!-- 2.js创建对象:(1)使用对象字面量(2)使用关键字new;这些创建对象实例是有限制的，它们会创建单一的对象。可以使用构造器函数,进行批量创建
+        实例对象;
+        访问对象属性的方法objectName.property;objectName["property"];
+        使用delete关键字删除属性:delete objectName.property;使用nationality关键字可以给未给类型添加新属性:objectName.nationality="propertyName"
+        可以使用prototype属性，在构造外部添加属性，在内部可以直接使用this关键字。也可以使用prototype关键字给对象构造器添加新方法。 -->
+
+            <!-- 3.箭头函数:箭头函数没有自己的this,它们不适合定义对象的方法。省略了function关键字,return关键字,和花括号 -->
+
+            <!-- 4.使用call()方法,就可以编写在不同对象上使用的方法;call内传递的是不同对象，以及参数。call方法与apply方法功能类似，但是
+            参数传递的不一致,前者是参数列表,后者是数组 -->
+
+              <!-- 5.html DOM 模型被结构化为对象树 -->
+                  <!-- 如果查找匹配指定css选择器(id，类名，类型，属性)的所有HTML元素，使用querySelectorAll()方法
+                  使用attribute改变属性的值;使用style.property改变样式
+                  如需向HTML元素分配事件,可以直接使用事件属性;也可以使用js向HTML元素分配事件 -->
+
+          <input type="button" value="返回测试" onclick=returnTest()>
+          <p id="parameterTest"></p>  
+<script>
+function returnTest(){
+window.history.back();
+}
+
+
+  var counter=0;
+  function add(){
+    var counter=1;
+    counter++;
+  }
+add();
+add();
+add();
+console.log("counter:"+counter);
+    function validateForm() {
+      var x = document.forms["myForm"]["fname"].value;
+      if (x == "") {
+        alert("必须填写姓名！");
+        return false;
+      }
+    }
+
+    function parameterTest(){
+        return arguments.length;
+    }
+
+    var parameterTestEle= document.getElementById("parameterTest");
+    parameterTestEle.innerText=parameterTest(2,2,2,2,2,2,2,2,3);
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../ref/vue.js" ></script>
+</head>
+<body>
+    
+    <!-- 0.事件绑定-参数传递
+    1.如果事件直接绑定函数名称，那么会默认传递事件对象作为事件函数的第一个参数;
+    2.如果事件绑定函数调用，那么事件对象必须做为最后一个参数显示传递，并且事件对象的名称必须是$event
+
+    3.可以使用事件修饰符，简化事件操作.
+    .stop:阻止冒泡
+    .prevent:去除默认行为
+    除了支持鼠标点击修饰，也支持键盘修饰。可以实现按键提交,一键删除等功能。 -->
+    
+    <!-- 4.事件绑定-自定义按键修饰符。
+    自定义按键修饰符名字是自定义的,但是对应的值必须是按键对应的event的keycode值,官方语法为:
+    Vue.config.keycodes.f1=number -->
+
+    <!-- 5.单引号，和双引号好像是通用的 -->
+    <!-- v-model是双向绑定,本质是通过v-bind:value绑定到页面,然后通过监听事件v-on:input修改后台的值。 -->
+        <div id='app-1'>
+            <label>数值A:<input v-model="numberA"></label>
+            <label>数值A:<input v-model='numberB'></label>
+            <button @click='numSum'>计算</button>
+            <label>计算结果为:<label v-text='sum'></label></label>
+        </div>    
+
+    <div id='app-0'>
+        {{msgClick}}
+        <button @click="clickTest(1,2)">点击</button>
+    </div>
+    <script>
+        new Vue({
+            el:'#app-1',
+            
+            data:{
+                numberA:'',
+                numberB:'',
+                sum:''
+            },
+            methods:{
+                numSum:function(){
+                    this.sum=parseInt(this.numberA)+parseInt(this.numberB);
+                }
+            }
+        })
+        new Vue({
+            el:'#app-0',
+            data:{
+                msgClick:"hello world"
+            },
+            // 多参测试
+            methods:{
+                clickTest:function(p,p1,p2){
+                    console.log("hello clickTest"+p),
+                    this.msgClick="hello click1"
+                }
+            }
+        })
+    </script>
+</body>
+</html>

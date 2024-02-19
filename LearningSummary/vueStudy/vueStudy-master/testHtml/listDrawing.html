@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../ref/vue.js"></script>
+
+</head>
+
+<body>
+  <!-- 0.v-for把一个数组对应为一组元素 -->
+  <!-- 在 v-for块中，还可以访问所有父作用域的property,还支持一个可选的第二个参数，即，当前项的索引. -->
+  <div id='app-0'>
+    <ol v-for='item in items' :key='item.message'>
+      <li>{{item.message}}</li>
+    </ol>
+  </div>
+
+  <!-- 1.v-for可以用来遍历对象 -->
+  <!-- 使用name;value,index来遍历对象 -->
+  <ul id="v-for-object" class="demo">
+    <li v-for="value in object">
+      {{ value }}
+    </li>
+  </ul>
+
+  <!-- 2.v-for是可以有使用范围 -->
+  <div>
+    <span v-for="n in 10">
+      {{n}}
+    </span>
+  </div>
+
+  <!-- 3.事件 -->
+  <div id='app-1'>
+    <button v-on:click='count+=1'>add 1</button>
+    <p>点击的次数共计有:{{count}}</p>
+  </div>
+
+  <!-- 4.可以通过全局config.keycodes对象自定义按键修饰符别名 -->
+  vue.config.keyCodes.f1=112
+
+  <!-- 5.使用v-model指令在表单<input>,<textarea>,<select>元素创建双向数据绑定 -->
+  <!-- 数据绑定的必须创建vue实例,并对变量进行初始化 -->
+  <div id='app-2'>
+    <!-- <input v-model.lazy="message">
+          <input v-model.number="message"> -->
+    <input v-model="message">
+    <label>{{message}}</label>
+  </div>
+
+  <!-- 6在文本区域插值（<textarea>{{text}}</textarea>）无效，应该使用v-model代替 -->
+  <div id='app-3'>
+    <span>"textarea is :"+{{message}}</span>
+    <textarea v-model='message'></textarea>
+  </div>
+
+  <!-- 7.checkbox的测试 -->
+  <div id='app-4'>
+    <input type="checkbox" id='checkboxtest' v-model='checked'>
+    <label>{{checked}}</label>
+  </div>
+
+  <!-- 8.radio的测试 -->
+  <div id='app-5'>
+    <input type='radio' v-model='checked'>
+    <label>checked</label>
+  </div>
+
+  <!-- 9.组件的复用，组件中的data必须是一个函数，取代data数据, -->
+  <!-- 通过prop向子组件传递数据，当创建一个博文组件的时候，不能向此传递博文的标题或内容我们想展示的数据 -->
+  <div id='app-6'>
+    <blog-post v-for="post in posts" v-bind:title='post.title'></blog-post>
+  </div>
+
+  <!-- 10.当构建一个组件时，每一个组件都必须只有一个根元素 -->
+
+  <!-- 11.监听子组件事件 -->
+  <!-- 父级组件通过v-on监听子组件实例的任意事件，子组件可以通过调用内建的$emit方法并传入事件来触发一个事件 -->
+  <!-- 可以使用$emit()传递参数 -->
+  <div id='app-7'>
+    <div :style="{fontSize:postFontSize+'em'}">
+      <blog-postsub v-for="post in posts" v-bind:post="post" v-bind:key="post.id" v-on:enlarge-text="postFontSize+=0.1"></blog-postSub>
+      </div>
+  </div>
+
+
+</body>
+<script>
+  Vue.component('blog-postsub', {
+    props: ['post'],
+    template: `
+    <div class="blog-post">
+      <h3>{{ post.title }}</h3>
+      <button v-on:click="$emit('enlarge-text')">
+        Enlarge text
+      </button>
+      <div v-html="post.content"></div>
+    </div>
+  `
+  }
+  )
+  new Vue({
+    el: '#app-7',
+    data: {
+      postFontSize:2,
+      posts: [
+        { id: 0, title: 'test1' },
+        { id: 1, title: 'test2' },
+        { id: 2, title: 'test3' },
+      ]
+    }
+    //   post: [
+    //   {id:0,title:'test1'},
+    // {id:1,title:'test2'},
+    // {id:2,title:'test3'},
+    //   ]
+
+  })
+
+  Vue.component('blog-post', {
+    props: ['title'],
+    template: '<h1>{{title}}</h1>'
+  })
+  new Vue({
+    el: '#app-6',
+    data: {
+      posts: [
+        { id: 0, title: 'test1' },
+        { id: 1, title: 'test2' },
+        { id: 2, title: 'test3' },
+      ]
+    }
+  })
+  new Vue({
+    el: '#app-4',
+    data: {
+      checked: true
+    }
+  })
+  new Vue({
+    el: '#app-3',
+    data: {
+      message: ''
+    }
+  })
+  new Vue({
+    el: '#app-2',
+    data: {
+      message: ''
+    }
+  })
+  new Vue({
+    el: '#app-1',
+    data: {
+      count: 1,
+    }
+  })
+
+  new Vue({
+    el: '#v-for-object',
+    data: {
+      object: {
+        title: 'How to do lists in Vue',
+        author: 'Jane Doe',
+        publishedAt: '2016-04-10'
+      }
+    }
+  })
+  new Vue({
+    el: '#app-0',
+    data: {
+      items: [
+        { message: 'Foo' },
+        { message: 'Bar' }
+      ]
+    }
+  })
+</script>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 0. AJAX:Asynchronous js and xml;AJAX组合了(1)浏览器内建的XMLHttpRequest对象;(2)js和HTML DOM -->
+    <!-- AJAX允许通过与场景后面的Web服务器交换数据来异步更新。这意味着更新网页,不需要重新加载整个页面 -->
+    <!-- AJAX工作流程:1.网页中发生一个事件。2.由js创建XMLHttpRequest对象.3.XMLHttpRequest对象向Web服务器发送请求;4.服务器处理该请求。
+    5.服务器响应发送回网页。6.由js读取相应。7.由js执行正确的操作。 -->
+
+    <!-- 1.XMLHttpRequest对象用于同服务器交换数据。
+    需要发送请求，我们使用其中的open("method","url","async")方法，和send()方法:向服务器发送请求,
+    GET和Post:GET比post更简单更快。
+
+    2.通过异步发送,js不必等待服务器相应,而是可以:(1)在等待服务器响应时执行其他脚本。(2)当响应就绪时处理响应。
+
+    3.通过XMLHttpRequest对象，可以定义当请求接收到应答时所执行的函数。这个函数是在XMLHttpRequest对象的onreadystatechange属性中定义的。 -->
+
+    <!-- 4.json js object notation (js对象标记法);json是一种存储和交换数据的语法;json是通过js对象标记书法写的文本。
+    使用JSON.stringify()将js对象转换成JSON字符串;JSON.parse()将js字符串转成json对象。
+
+    5.可以使用LocalStorage.setItem()把数据存储到本地;使用LocalStorage.getItem()从本地获取数据。也可以使用sessionStorage将数据存储到一次
+    性的会话中。
+
+    6.JSON和XML均可用于从web服务器接收数据。
+    都是自描性的可供人类可读的；都是有分级的(值);都能被大量编程语言解析和使用;都能被XMLHttpRequest读取;
+    XML必须使用XML解析器进行解析，而JSON可以通过标准的js函数进行解析。
+
+    7.JSON对象被花括号{}包围;以键值对的格式书写;键必须是字符串，值可以是有效的JSON数据类型(字符串，数字，对象，数组,boolen,null) -->
+
+    <!-- 8.jquery是处理浏览器不兼容并简化HTML DOM操作,事件处理,动画和AJAX。
+    原本的document.getElementById("id")可以简化为$("#id"); -->
+
+        <div id="testText"></div>
+
+    <button onclick=baidu()>百度</button>
+    <button onclick="zhihu()">知乎</button>
+    <script>
+        // $("#testText").innertext("hello world");
+        document.getElementById("testText").innerText="hello world";
+
+        function baidu(){
+
+    window.location="https://www.baidu.com";
+        }
+        function zhihu(){
+
+    window.location="https://www.zhihu.com";
+        }
+        
+    </script>
+
+</body>
+
+</html>

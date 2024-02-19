@@ -1,0 +1,3 @@
+1.	Mapper-UserMapper中,添加了@Respository注解。
+答:为了Spring控件扫描
+2.	使用Maven引入jar包，这些包是本地还是远程服务?并且被存放到了哪里。

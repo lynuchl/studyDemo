@@ -1,0 +1,11 @@
+1.spring boot为开发带来了简单:编码;配置;监控;部署。
+2.spring boot运用“约定优于配置”的思想.
+3.spring 中的bean工厂,把每个java类当作bean，spring看作工厂,工厂可以创建bean，即是对bean进行实例化.
+4.IOC也就是bean工厂的过程。
+5.spring的依赖注入和new对象的区别:依赖注入是单例,性能要高(在用时才会从spring容器中取出),降低耦合()
+6.java三大器之:拦截器，过滤器，监听器。
+7.Filter流程是线性的，URL传过来之后，检查之后，可保持原来的流程继续向下进行，被下一个Filter或Servlet接收，而Servlet在处理之后，不会被向下传递，
+Filter可用来进行字符编码过滤，检查用户是否登陆，进行页面缓存。Filter和Servlet都是针对URL之类的，而listener是针对对象的操作，如Session的创建，
+Session.setAttribute的发生，在这样的事件发生时做的一些事情。
+8.spring依赖注入的三种方式:构造函数，setter方法，接口注入。管理对象间的依赖的关系:直接编码方式，配置文件方式，元数据方式。
+9.spring中的IOC service provider和 spring IOC容器(applicationcontext和beanfactory容器)的区别。

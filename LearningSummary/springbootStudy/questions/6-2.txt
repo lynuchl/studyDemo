@@ -1,0 +1,16 @@
+2.后端的数据验证是什么?使用的是hibernate-validator包,不需要额外引入，已经包含在springboot包里了。
+
+3.maven项目,引入的依赖存到哪个地方了？
+
+4.Mapped Statement是什么?
+
+5.mybatis的日志处理是用log4j,那么具体是怎么处理的?
+
+6.springboot整合中,没有了sqlMapCOnfig.xml文件后，怎么配置别名？等其它配置。
+
+7.日志输出，现在的是使用slf4j.使用LoggerFactory获取Logger对象，是需要获取当前类对象，所以没法做一个公共的对象。那么有没有可以直接获取Logger对象的方法？
+
+
+
+1.Mapper-UserMapper中,添加了@Respository注解。添加注解的意义是什么?
+答:可以进行依赖注入@AutoWrile

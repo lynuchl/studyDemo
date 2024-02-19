@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 0. Infinity是js在计算数超出最大可能数范围时返回的值;除以0也会生成Infinity,它是一个数 typeof(Infinity)将返回number -->
+
+    <!-- 1.绝对不能用前导0写数字，一些js会把它解释为八进制 -->
+
+    <!-- 2.toExponential()方法返回字符串值，它包含已被四舍五入并使用指数计数的数字；如:
+    var x = 9.656;
+    x.toExponential(2);     // 返回 9.66e+0
+    x.toExponential(4);     // 返回 9.6560e+0
+    x.toExponential(6);     // 返回 9.656000e+0;
+          toFixed()方法返回字符串值，它包含了指定位数小数的数字:
+          toPrecision()方法，返回字符串值，包含指定指定长度的数字-->
+
+    <!-- 3.数组文本方法，和数组对象方法创建数组;数组是特殊的对象使用typeof方法会返回'object'类型;数组元素可以是对象;push()方法添加数组元素 -->
+
+    <!-- 4.pop()方法从数组末尾删除一个元素，返回弹出的元素;push()在数组结尾处增加一个元素，返回新数组长度;shift()方法删除首个元素;unshift在首个处添加
+    元素;delete会在数组留下未定义的空洞，需要使用pop()或者push()方法代替;splice()方法用于向数组添加新项，第一个参数定义添加位置，第二个参数定义
+    删除的元素数，其它为添加的元素 -->
+
+    <!-- 5.contat()方法合并现有的数组为一个新的数组,并可以使用任意数量的参数 -->
+
+    <!-- 6.slice()方法用数组的某个片段切出新数组;也可以用创建数组，且不会改动原数组 -->
+
+    <!-- 7.如果需要原始值，则会自动把数组转换成字符串 -->
+
+    <!-- 8.sort()以字母的顺序对数组进行排序,但对数字排序无效;reverse()反转数组中的元素; -->
+
+    <!-- 9.对数组使用Math.max().apply(null,arr)来查找数组的最高值 -->
+        
+    <!-- 10.Array.foreach()迭代,为每个数组元素调用一次函数;Array.map()对每个元素执行函数创建数组，且不会更改远数组;Array.filter()过滤;
+     Array.every()方法检查所有数组值是否通过测试;返回bool值--;Array.find()返回通过测试第一个数字元素的值,findIndex()返回角标> -->
+
+    <!-- 11.Math.round()的返回值是四舍五入最近的整数;Math.ceil()返回是上舍最接近的整数;floor()是下舍; -->
+    <div></div>
+
+    <!-- 12.getDay()方法返回0-6的数字周名 -->
+
+    <!-- 13.for/in可以用于遍历对象属性, -->
+    <p id="forInTest"></p>
+</body>
+<script>
+    var arrays={key1:"value1",key2:"value2",key3:"value3"}
+    var forIn;
+    var forInTest="";
+    for(forIn in arrays){
+        forInTest+=arrays[forIn]+" ";
+    }
+    document.getElementById("forInTest").innerText=window.forInTest;
+    var test=1;
+    if(test>0){
+
+    }
+</script>
+</html>

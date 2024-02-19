@@ -1,0 +1,34 @@
+1.@spingbootConfiguration:是spring boot的基石,创建spring boot项目会默认加载主类上。是@EnableAutoConfiguration:启用springboot的自动配置机制;
+@componentScan:扫描@component(@Service,@Controller)注解的bean，注解会默认扫描该类所在下的所有包的所有类。
+@Configuration:允许spring上下文中注册额外的bean或导入其他配置类。
+
+2.@Component,@Repository,@Service,@Controller：使用这些标识,然后才能使用@AutoWired。其中@Component是通用。
+
+3.@Scope:声明Spring Bean的作用域.@Scope(singleton(单例)/prototype(每次请求创建bean)/request(每次http请求,该Bean仅在当前http请求有效)/session
+(每次http请求，仅在当前session内有效))。
+
+4.@RestController注解是@Controller和@ResposeBody的合集。
+
+5.@GetMapping("/users")等价于@RequestMapping(value="/users",method=RequestMethod.Get)
+
+6.@PathVariable和@RequestParam前者是获取路径参数,后者是获取查询参数。
+
+7.RequestBody用于读取request请求,的body部分并且Content-type为application/json格式的数据。接收的数据可以自动映射到java对象中去。
+
+8.读取配置信息:(1):@value("$(property)")读取较简单的数据。(2):@ConfigurationProperties读取配置信息并与bean绑定。
+
+9.验证请求体(@RequestBody):在需要验证的参数上加了@Valid注解,如果验证失败，它将抛出MethodArgumentNotValidException。
+
+10.验证请求参数:(Path Variables 和 Request Parameters)一定要在类上添加@Validated注解。这个参数可以告诉Spring去校验方法参数。
+
+11.@Entity声明一个类对应一个数据库实体;@Table(name="tableName")设置表名;@Id声明一个字段为主键，可以使用@GeneratedValue直接使用JPA内置
+提供的四种主键策略来指定主键生成策略。JPA使用了枚举替代常量的用法:TABLE;SEQUENCE;IDENTITY;AUTO。使用@Column声明字段，@Column(name="user_name",
+nullable=false,length=32);
+
+12.@Modifying注解提示JPA该操作是修改操作，需要和@Transactional注解使用。
+
+13.事务开启:使用@Transactional注解即可。可以作用于类:表示该类的所有public方法都配置相同的事务信息;作用于方法又作用于类:方法的事务信息会覆盖类的事务
+信息。
+
+14.json数据处理:@JsonIgnoreProperties({propertyName})作用在类上用于过滤掉特定字段不返回或者不解析。@JsonIgnore作用于类属性上,
+@JsonFormat一般用于格式化json数据。

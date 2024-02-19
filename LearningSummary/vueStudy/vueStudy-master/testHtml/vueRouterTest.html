@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../ref/vue.js" ></script>
+    <script src="../ref/vue-router.js"></script>
+    <!-- <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script> -->
+
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/vue-router/3.2.0/vue-router.js"></script> -->
+
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/vue-router/3.1.6/vue-router.common.js"></script> -->
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/vue-router/3.1.6/vue-router.js"></script> -->
+
+</head>
+<body>
+     <div id='app-0'>
+        <router-link to="/test">首页</router-link>
+        <!-- <router-link to="/about">about</router-link> -->
+        <div>
+            <router-view></router-view>
+        </div>
+     </div>
+</body>
+<script>
+    var routes=[
+        {
+            path: '/test', component: { template: '<div>foo</div>' }
+            // template:'<div><p>首页111</p></div>'
+        },{ path: '/bar', component: { template: '<div>foo</div>' } }
+        // {
+        //     path:'/about',
+        //     component:{
+        //         template:'\
+        //         <div><p>about11</p>\
+        //             </div>\ '  
+        //     }
+        // }
+    ];
+    router = new VueRouter({
+  routes // (缩写) 相当于 routes: routes
+})
+
+const app = new Vue({
+  router
+}).$mount('#app-0')
+
+</script>
+</html>

@@ -1,0 +1,3 @@
+1.vue下的MVVM模式,V(DOM);M(Plain js object);VM(vue:(1)dom监听(2)data bindings);
+2.在创建vue对象实例时,传入的是option对象。
+3.生命周期函数。

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../ref/vue.js" ></script>
+
+</head>
+<body>
+    
+    <!-- 0.可以将v-bind:class绑定一个对象， -->
+    <div id='app-0' >
+     <p v-bind:class="{active:isActive}">
+        hello world
+     </p>
+    </div>
+
+    <!-- 1.可以将v-bind:class绑定一个计算属性 -->
+    <!-- 也可以绑定数组 -->
+    <div id="app-1">
+        <p :class="computedBind" >this will be blue</p>
+    </div>
+<!-- 
+    2.当vue对象未定义时，则有可能是为引入vue包
+    每一个vue对象对应的是一个id -->
+
+    <!-- 3.可以将v-bind:class绑定一个vue组件 -->
+    <div id='app-2'>
+        <componentbind :class='{active:isActive}'></componentbind>
+    </div>
+
+    <!-- 4.v-if指令用于渲染一块内容，在表达式返回truthy值的时候被渲染 -->
+    <!-- 可以和v-else;v-else-if搭配使用 -->
+    <!-- v-else元素必须跟在带v-if或者v-else-if的元素后面，否则不会被识别 -->
+    <!-- 使用template元素进行v-if条件渲染分组 -->
+    <div id='app-3'>
+        <template v-if=false>
+            <P>you can see this</P>
+            <P>you can see this</P>
+            <P>you can see this</P>
+            <P>you can see this</P>
+        </template>
+        <h1 v-if='seen'>if can see</h1>
+        <h2 v-else>else can see</h2>
+    </div>
+
+    <!-- 5.使用vue提供的一种表达方式，来表达这两个元素是完全独立的，只需要添加一个具有唯一的key attribute即可 -->
+<div>
+    <input placeholder="enter test..." key='key attribute test'>
+</div>
+
+    
+</body>
+<style>
+    .active{
+        color:red;
+    }
+    .app1active{
+        color: blue;
+    }
+</style>
+<script>
+new Vue({
+    el:'#app-3',
+    data:{
+        seen:true
+    }
+})
+
+Vue.component('componentbind',{
+    template:'<p>hello world</p>'
+})
+new Vue({
+    el:'#app-2',
+    data:{
+        isActive:true
+    }
+})
+    new Vue({
+        el:'#app-1',
+        data:{
+            isActive:true,
+            error:true
+        },
+        // 生命周期函数
+        computed:{
+            computedBind:function(){
+                return{
+                    app1active:this.isActive&&this.error
+                }
+            }
+        }    
+    })
+    new Vue({
+        el:'#app-0',
+        data:{
+            isActive:true
+        }
+    })
+</script>
+</html>
