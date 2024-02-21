@@ -50,9 +50,10 @@ public class ServerBaseDemoController {
 //            System.out.println("执行的顺序："+i);
 //        }
         Date startDate=new Date();
-        serverBaseDemoService.selectByName(name);
+        ServerBaseDemo serverBaseDemo= serverBaseDemoService.selectByName(name);
         Date endDate=new Date();
         Long time=endDate.getTime()-startDate.getTime();
+        log.info(serverBaseDemo.toString());
         log.info(Long.toString(time)+"推送成功！！！");
 
         return BaseResult.success("hello world");

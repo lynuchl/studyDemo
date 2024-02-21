@@ -34,4 +34,13 @@ public class ServerBaseDemo implements Serializable {
     public void setTestname(String testname) {
         this.testname = testname == null ? null : testname.trim();
     }
+
+    @Override
+    public String toString() {
+        return "ServerBaseDemo{" +
+                "id=" + id +
+                ", testid=" + testid +
+                ", testname='" + testname + '\'' +
+                '}';
+    }
 }

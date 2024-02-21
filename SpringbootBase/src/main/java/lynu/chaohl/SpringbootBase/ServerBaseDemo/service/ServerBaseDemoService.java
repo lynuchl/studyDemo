@@ -2,7 +2,7 @@ package lynu.chaohl.SpringbootBase.ServerBaseDemo.service;
 
 import lombok.extern.slf4j.Slf4j;
 import lynu.chaohl.SpringbootBase.ServerBaseDemo.entity.ServerBaseDemo;
-import lynu.chaohl.SpringbootBase.ServerBaseDemo.mapper.ServerBaseDemoMapper;
+import lynu.chaohl.SpringbootBase.ServerBaseDemo.mapper.addMapper.ServerBaseDemoMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

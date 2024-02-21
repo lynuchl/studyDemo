@@ -44,6 +44,7 @@ Demo点：
 
 9.mybatis-generator代码生成器，目前还有写问题需要优化，(1)重复生成会将mapper.xml在原文件里再生成一遍，导致代码重复,
 如果一个项目中已经生成过一个实体类，使用此配置重复生成的的话，会造成代码重复，原因未明。
-(2)如果不指定xml和Mapper的映射路径，那么使用默认的配置就不能瞎新增命名文件。
+(2)如果不指定xml和Mapper的映射路径，那么使用默认的配置就不能瞎新增命名文件,mapper文件下必须是mapper文件，不能再新加目录，
+resources下的文件目录需要一致。
 
 10.mybatis测试：(1)对应关系映射测试见../resources/mybatis/mapper/NationMapper.xml

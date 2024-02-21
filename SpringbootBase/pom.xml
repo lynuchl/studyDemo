@@ -163,6 +163,8 @@
                 </configuration>
             </plugin>
         </plugins>
+        <!--打包后的名称-->
+        <finalName>BaseServer</finalName>
     </build>
 
 

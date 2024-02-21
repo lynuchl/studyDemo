@@ -32,9 +32,11 @@ management:
 #      test-while-idle: false
 
 #多数据源的时候，此配置无效，且报错，暂时未发现原因。
-mybatis:
-  mapper-locations: classpath:mybatis/mapper/*Mapper.xml
-#  type-aliases-package: lynu.chaohl.SpringbootIntegration.ServerBaseDemo.mapper.mybatisTest
+原因猜想：多数据源的时候因配置原因，会重复注入，导致mapper对象未注入，所以目前这种多数据源配置的情况只能使用默认配置，
+那么要解决这种问题，1、去除多数据源配置 2、修改多数据的conf配置文件
+#mybatis:
+#  mapper-locations: classpath:mybatis/mapper/**/*.xml
+#  type-aliases-package: lynu.chaohl.SpringbootIntegration.ServerBaseDemo.mapper
 #  datasource:
 #  #mybatis连接配置
 #    driver-class-name: org.h2.Driver

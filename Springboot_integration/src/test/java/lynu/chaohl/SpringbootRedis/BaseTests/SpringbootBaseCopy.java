@@ -2,7 +2,7 @@ package lynu.chaohl.SpringbootRedis.BaseTests;
 
 import lombok.extern.slf4j.Slf4j;
 import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity.Province;
-import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity.mybatisTest.City;
+import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.mapper.ProvinceAddMapper;
 import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.mapper.ProvinceMapper;
 import lynu.chaohl.SpringbootIntegration.SpringbootIntegrationApplication;
 import org.junit.Test;
@@ -12,9 +12,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.annotation.Resource;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 //import org.junit.jupiter.api.Test;
@@ -37,6 +35,11 @@ public class SpringbootBaseCopy {
         @Autowired
         private ProvinceMapper provinceMapper;
 
+        @Autowired
+        private ProvinceAddMapper mapper;
+
+
+
 //        @Autowired
 //        private WebSocketInvokeService webSocketInvokeService=new WebSocketInvokeService();
 //
@@ -53,7 +56,8 @@ public class SpringbootBaseCopy {
         map.put("startIndex",0);
         map.put("pageSize",2);
 
-       List<Province> provinces= provinceMapper.divPage(map);
+       Province provinces= mapper.selectByPrimaryKey(1);
+//       List<Province> provinces= provinceMapper.divPage(map);
 
         log.info("provinces.toString():"+provinces.toString());
 //       List<City> cities = cityMapper.divPage(map);
