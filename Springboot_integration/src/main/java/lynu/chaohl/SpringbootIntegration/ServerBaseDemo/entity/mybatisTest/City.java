@@ -54,4 +54,15 @@ public class City implements Serializable {
     public void setPopulation(Integer population) {
         this.population = population;
     }
+
+    @Override
+    public String toString() {
+        return "City{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", countrycode='" + countrycode + '\'' +
+                ", district='" + district + '\'' +
+                ", population=" + population +
+                '}';
+    }
 }

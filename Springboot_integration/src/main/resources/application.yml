@@ -7,7 +7,7 @@ server:
 #多配置文件，配置激活的目标
 spring:
   profiles:
-    active: data
+    active: data,addConf
 ## 2.6.x版本的spingboot不兼容swagger某些版本,需要添加的配置。
   mvc:
     pathmatch:
@@ -32,8 +32,8 @@ management:
 #      test-while-idle: false
 
 #多数据源的时候，此配置无效，且报错，暂时未发现原因。
-#mybatis:
-#  mapper-locations: classpath:mybatis/mapper/**/*.xml
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*Mapper.xml
 #  type-aliases-package: lynu.chaohl.SpringbootIntegration.ServerBaseDemo.mapper.mybatisTest
 #  datasource:
 #  #mybatis连接配置

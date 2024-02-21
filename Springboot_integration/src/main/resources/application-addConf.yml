@@ -1,0 +1,3 @@
+myAutoConf:
+  serverDruidDemo:
+    enable: true
