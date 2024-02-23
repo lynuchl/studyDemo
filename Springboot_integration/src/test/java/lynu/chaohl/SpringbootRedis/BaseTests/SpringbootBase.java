@@ -1,14 +1,19 @@
 package lynu.chaohl.SpringbootRedis.BaseTests;
 
 import lombok.extern.slf4j.Slf4j;
+import lynu.chaohl.SpringbootIntegration.SpringbootIntegrationApplication;
 import lynu.chaohl.SpringbootIntegration.websocket.service.WebSocketInvokeService;
 //import org.junit.jupiter.api.Test;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.junit4.SpringRunner;
 
 @Slf4j
+//以classes为入口做测试启动类，
 @SpringBootTest(classes = SpringbootBase.class)
 public class SpringbootBase {
 

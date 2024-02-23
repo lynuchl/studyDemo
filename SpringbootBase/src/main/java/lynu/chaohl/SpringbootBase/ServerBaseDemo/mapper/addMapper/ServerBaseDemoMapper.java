@@ -1,4 +1,4 @@
-package lynu.chaohl.SpringbootBase.ServerBaseDemo.mapper;
+package lynu.chaohl.SpringbootBase.ServerBaseDemo.mapper.addMapper;
 
 import lynu.chaohl.SpringbootBase.ServerBaseDemo.entity.ServerBaseDemo;
 import org.apache.ibatis.annotations.Mapper;

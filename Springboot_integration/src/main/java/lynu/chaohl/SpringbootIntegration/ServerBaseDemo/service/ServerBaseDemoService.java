@@ -2,9 +2,8 @@ package lynu.chaohl.SpringbootIntegration.ServerBaseDemo.service;
 
 import lombok.extern.slf4j.Slf4j;
 import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity.ServerBaseDemo;
-import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity.County;
+import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity.mybatisTest.City;
 import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.mapper.ServerBaseDemoMapper;
-import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.mapper.CountyMapper;
 import lynu.chaohl.SpringbootIntegration.utils.CustomException;
 import lynu.chaohl.SpringbootIntegration.utils.FileUtils;
 import lynu.chaohl.SpringbootIntegration.utils.IdWorkerUtils;
@@ -15,6 +14,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 
 @Service
@@ -25,8 +26,17 @@ public class ServerBaseDemoService {
     @Value("${file.size.limit}")
     private String maxFileSize;
 
+//    @Autowired
+//    private CityMapper cityMapper;
+
     @Autowired
     private ServerBaseDemoMapper serverBaseDemoMapper;
+
+
+//    public List<City> divPage(Map<String,Integer> map){
+//
+//        return cityMapper.divPage(map);
+//    }
 
 
     public int insert(ServerBaseDemo serverBaseDemo){

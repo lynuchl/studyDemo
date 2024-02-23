@@ -1,3 +1,4 @@
 Demo点：
 1.测试类启动
  (1):按照项目自动生成的项目目录即可
+2.测试类启动时不启动springboot项目时见springbootBase文件，反之见springbootBaseCopy

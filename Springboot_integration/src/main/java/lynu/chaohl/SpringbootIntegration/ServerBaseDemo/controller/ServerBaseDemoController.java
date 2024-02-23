@@ -5,6 +5,7 @@ import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity.ServerBaseDemo;
 import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity.County;
+import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity.mybatisTest.City;
 import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.service.ServerBaseDemoService;
 import lynu.chaohl.SpringbootIntegration.common.HttpResp.BaseResult;
 import lynu.chaohl.SpringbootIntegration.common.log.OperationLog;
@@ -13,6 +14,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.util.List;
+import java.util.Map;
 
 @RestController
 @Api(tags = "微服务后端基础流程测试: springboot+mybatis+mysql")
@@ -23,6 +26,7 @@ public class ServerBaseDemoController {
     @Autowired
     private ServerBaseDemoService serverBaseDemoService;
 
+
     @OperationLog(apiName = "这是一个swagger的Demo测试")
     @ApiOperation("${propertiesTest}")
     @PostMapping("/insert")
@@ -31,10 +35,22 @@ public class ServerBaseDemoController {
         if (serverBaseDemoService.insert(sbd)!=0)
         log.info("hello world");
 
-//
-
         return BaseResult.success("hello world");
     }
+
+//    @OperationLog(apiName = "这是二个swagger的Demo测试")
+//    @ApiOperation("这是二个swagger的Demo测试")
+//    @PostMapping("/divPage")
+//    public BaseResult<List<City>> divPage(@RequestBody Map<String,Integer> map){
+//
+//        List<City> cities=   serverBaseDemoService.divPage(map);
+//
+//
+//        log.info(cities.toString());
+////
+//
+//        return BaseResult.success(cities);
+//    }
 
     @ApiOperation("文件上传")
     @PostMapping("/uploadFile")

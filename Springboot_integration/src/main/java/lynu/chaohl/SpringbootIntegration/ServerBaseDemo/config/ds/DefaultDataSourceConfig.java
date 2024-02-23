@@ -6,6 +6,7 @@ import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
@@ -16,6 +17,7 @@ import javax.sql.DataSource;
 @Configuration
 // 扫描 Mapper 接口并交给容器管理
 @MapperScan(basePackages = DefaultDataSourceConfig.PACKAGE, sqlSessionFactoryRef = "defaultSqlSessionFactory")
+@ConditionalOnProperty(name="myAutoConf.serverDruidDemo.enable",havingValue = "false")
 public class DefaultDataSourceConfig {
 
     // 精确到 cluster 目录，以便跟其他数据源隔离
