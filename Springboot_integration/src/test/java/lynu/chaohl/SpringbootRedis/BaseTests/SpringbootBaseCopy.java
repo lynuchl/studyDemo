@@ -2,8 +2,12 @@ package lynu.chaohl.SpringbootRedis.BaseTests;
 
 import lombok.extern.slf4j.Slf4j;
 import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity.Province;
+import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.entity.ServerBaseDemo;
 import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.mapper.ProvinceAddMapper;
 import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.mapper.ProvinceMapper;
+import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.mapper.ServerBaseDemoMapper;
+import lynu.chaohl.SpringbootIntegration.ServerDruidDemo.dao.master.UserDao;
+import lynu.chaohl.SpringbootIntegration.ServerDruidDemo.domain.User;
 import lynu.chaohl.SpringbootIntegration.SpringbootIntegrationApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,6 +17,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 //import org.junit.jupiter.api.Test;
@@ -38,6 +43,12 @@ public class SpringbootBaseCopy {
         @Autowired
         private ProvinceAddMapper mapper;
 
+        @Autowired
+        private ServerBaseDemoMapper serverBaseDemoMapper;
+
+        @Autowired
+        private UserDao userDao;
+
 
 
 //        @Autowired
@@ -57,9 +68,16 @@ public class SpringbootBaseCopy {
         map.put("pageSize",2);
 
        Province provinces= mapper.selectByPrimaryKey(1);
-//       List<Province> provinces= provinceMapper.divPage(map);
+       List<Province> provinceList= mapper.divPage(map);
+       User user= userDao.findByName("chaohl");
 
         log.info("provinces.toString():"+provinces.toString());
+        log.info("provinces.toString():"+provinceList.toString());
+        log.info("user.toString():"+user.toString());
+
+        ServerBaseDemo serverBaseDemo = serverBaseDemoMapper.selectByPrimaryKey(1);
+        log.info(serverBaseDemo.toString());
+
 //       List<City> cities = cityMapper.divPage(map);
 
 //       log.info(cities.toString());

@@ -25,20 +25,19 @@ public class MasterDataSourceConfig {
     static final String PACKAGE = "lynu.chaohl.SpringbootIntegration.ServerDruidDemo.dao.master";
     static final String MAPPER_LOCATION = "classpath:mybatis/mapper/muti_ds/UserMapper.xml";
 
-    @Value("${master.datasource.url}")
+    @Value("${spring.datasource.master.url}")
     private String url;
 
-    @Value("${master.datasource.username}")
+    @Value("${spring.datasource.master.username}")
     private String user;
 
-    @Value("${master.datasource.password}")
+    @Value("${spring.datasource.master.password}")
     private String password;
 
-    @Value("${master.datasource.driverClassName}")
+    @Value("${spring.datasource.master.driverClassName}")
     private String driverClass;
 
     @Bean(name = "masterDataSource")
-    @Primary
     public DataSource masterDataSource() {
         DruidDataSource dataSource = new DruidDataSource();
         dataSource.setDriverClassName(driverClass);
@@ -47,15 +46,12 @@ public class MasterDataSourceConfig {
         dataSource.setPassword(password);
         return dataSource;
     }
-
     @Bean(name = "masterTransactionManager")
-    @Primary
     public DataSourceTransactionManager masterTransactionManager() {
         return new DataSourceTransactionManager(masterDataSource());
     }
 
     @Bean(name = "masterSqlSessionFactory")
-    @Primary
     public SqlSessionFactory masterSqlSessionFactory(@Qualifier("masterDataSource") DataSource masterDataSource)
             throws Exception {
         final SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
