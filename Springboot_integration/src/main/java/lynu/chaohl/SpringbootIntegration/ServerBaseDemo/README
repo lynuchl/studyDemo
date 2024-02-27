@@ -12,5 +12,13 @@ Demo点：
 resources下的文件目录需要一致。
 
 ***mybatis测试：(1)对应关系映射测试见../resources/mybatis/mapper/testMapper/NationMapper.xml
+    (2):批量查询测试见：../resources/mybatis/mapper/testMapper/ServerBaseDemoMapper.xml
+    (3):缓存：默认开启一级缓存，其依赖于sqlsession一级缓存也叫本地缓存，当和spring整合时，一级缓存会失效，因为其依赖的sqlsession
+        会被spring自动关闭，导致一级缓存无效：与数据库同一次会话期间查询到的数据会放在本地缓存中。
+        以后如果需要获取相同的数据，直接从缓存中拿，没必须再去查询数据库；
+        备注：每个sqlSession中的缓存相互独立；sqlSession相同，两次查询之间执行了增删改操作；sqlSession相同，手动清除一级缓存；会导致缓存失效
+        二级缓存需要手动开启：需要在mybaits.xml中增加开启配置。只要开启了二级缓存，我们在同一个Mapper中的查询，可以在二级缓存中拿到数据，查出的数据都会被默认先放在一级缓存中
+        只有会话提交或者关闭以后，一级缓存中的数据才会转到二级缓存中。
 
 ***分页：(1)使用sql的limit关键字做分页，详细见..mapper.ProvinceAddMapper
+
