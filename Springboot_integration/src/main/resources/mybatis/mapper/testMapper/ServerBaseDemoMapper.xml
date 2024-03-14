@@ -87,7 +87,7 @@
 
   </insert>
 
-  <select id="queryQCR" parameterType="map" resultType="blog">
+  <select id="queryQCR" parameterType="map">
     select * from blog
     <where>
       <!--
