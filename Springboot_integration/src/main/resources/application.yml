@@ -27,6 +27,9 @@ management:
     health:
 #      enabled: true
       show-details: always
+#启用查看spirngboot默认自动配置
+#debug: true
+
 #  datasource:
 #    druid:
 #      test-while-idle: false
