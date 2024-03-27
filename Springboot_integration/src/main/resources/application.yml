@@ -78,3 +78,6 @@ management:
 ##    生成随机值
 #    randomValue: ${random.value}
 
+#spring:
+#  mvc:
+#    enable: true

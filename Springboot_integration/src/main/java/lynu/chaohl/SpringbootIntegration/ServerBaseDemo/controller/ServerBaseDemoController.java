@@ -10,6 +10,8 @@ import lynu.chaohl.SpringbootIntegration.ServerBaseDemo.service.ServerBaseDemoSe
 import lynu.chaohl.SpringbootIntegration.common.HttpResp.BaseResult;
 import lynu.chaohl.SpringbootIntegration.common.log.OperationLog;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -20,7 +22,7 @@ import java.util.Map;
 @RestController
 @Api(tags = "微服务后端基础流程测试: springboot+mybatis+mysql")
 @Slf4j
-@RequestMapping("ServerBaseDemo")
+@RequestMapping("/ServerBaseDemo")
 public class ServerBaseDemoController {
 
     @Autowired
@@ -37,6 +39,19 @@ public class ServerBaseDemoController {
 
         return BaseResult.success("hello world");
     }
+
+
+
+//    @OperationLog(apiName = "这是一个thymeleaf的测试")
+//    @ApiOperation("这是一个thymeleaf的测试")
+//    @RequestMapping("/thymeleaf")
+//    public String thymeleafTest(Model model){
+//
+//        log.info("这是一个thymeleaf的测试");
+//        model.addAttribute("msg","这是一个thymeleaf的测试");
+//
+//        return "test";
+//    }
 
 //    @OperationLog(apiName = "这是二个swagger的Demo测试")
 //    @ApiOperation("这是二个swagger的Demo测试")

@@ -12,6 +12,8 @@ spring:
   mvc:
     pathmatch:
      matching-strategy: ant_path_matcher
+    favicon:
+      enabled: false
 
      #include的值也可以改成*，但建议还是最小暴露原则，用啥开启啥
 #     springboot actuator监控配置

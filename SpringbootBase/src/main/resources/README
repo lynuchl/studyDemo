@@ -11,3 +11,5 @@ Demo点：resource目录下的配置文件的测试。
 
 4.静态资源的处理：sping.mvc默认有四个地方存放资源，分别是通过maven导包静态资源，访问方式是/webjars/***。也可以是根目录下的
 public、resources、static、/**。也可以是不通过默认，通过配置的方式指定路径：spring.mvc.static-path-pattern去指定。
+
+5.静态资源默认访问位置，网站图标的制定。favicon.ico的默认访问不带项目名称，否则无法访问。
